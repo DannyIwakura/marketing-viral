@@ -102,8 +102,9 @@ ver el porcentaje de visitas que acaba pulsando un banner.
   `wixsite.com`**. Para saber de dónde viene la gente (qué exchange, foro o red) hay que
   mirar el **Analytics de Wix**, que es gratis y sí ve la página de entrada real.
 - Los bloqueadores de anuncios cortan el script: las cifras son un **mínimo**, no un censo.
-- El plan gratuito guarda **6 meses** de histórico y admite 100.000 eventos al mes. Exporta
-  en CSV si quieres conservar los datos.
+- El plan gratuito guarda **6 meses** de histórico y admite 100.000 eventos al mes. Ojo: cada
+  propiedad de un evento cuenta aparte, así que un clic en un banner (1 evento + 4
+  propiedades) consume 5. Exporta en CSV si quieres conservar los datos.
 - En el plan gratuito no hay filtros de IP, así que tus propias visitas cuentan. Ábrelo una
   vez con `?notrack=1` para dejar de contarlas en tu navegador:
   `https://dannyiwakura.github.io/marketing-viral/?notrack=1` (`?track=1` lo revierte).
