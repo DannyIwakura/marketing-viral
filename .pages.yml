@@ -1,0 +1,64 @@
+# ---------------------------------------------------------------------------
+# Pages CMS (https://app.pagescms.org) - panel online, sin OAuth ni servidores.
+#
+# Como usarlo (una sola vez):
+#   1) Entra en https://app.pagescms.org y accede con tu cuenta de GitHub.
+#   2) Instala la GitHub App "Pages CMS" en el repositorio
+#      DannyIwakura/marketing-viral (solo ese repo).
+#   3) Abre el repositorio en Pages CMS: veras la coleccion "Traffic Exchanges"
+#      con las 84 fichas. Edita, sube banners y guarda -> commit en main ->
+#      GitHub Pages se actualiza solo en ~1 minuto.
+#
+# Este archivo no afecta al sitio: solo lo lee Pages CMS.
+# ---------------------------------------------------------------------------
+
+media:
+  - name: banners
+    label: Banners
+    input: public/banners
+    output: /banners
+    rename: false
+
+content:
+  - name: directorio
+    label: Traffic Exchanges
+    description: >-
+      Las fichas del directorio. "Destacado en portada" la lleva a la portada
+      (se muestran 8) y "Aparece en el directorio" la lista en ALL TEs.
+    type: file
+    path: public/data/tes.json
+    format: json
+    fields:
+      - name: tes
+        label: Fichas
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: id
+            label: ID
+            type: string
+          - name: title
+            label: Nombre
+            type: string
+            required: true
+          - name: url
+            label: URL de referido
+            type: string
+            required: true
+          - name: rank
+            label: Posicion en el directorio
+            type: number
+          - name: banner
+            label: Banner
+            type: image
+            options:
+              media: banners
+          - name: featured
+            label: Destacado en portada
+            type: boolean
+          - name: listed
+            label: Aparece en el directorio (ALL TEs)
+            type: boolean

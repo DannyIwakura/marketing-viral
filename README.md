@@ -1,9 +1,10 @@
 # Marketing Viral
 
-Directorio de **Traffic Exchanges** con diseño oscuro, panel de contenido (Decap CMS) y
-despliegue automático en **GitHub Pages**. Gratis, con URL pública siempre activa y
-publicación con un simple `git push`.
+Directorio de **Traffic Exchanges** con diseño oscuro, panel de contenido y despliegue
+automático en **GitHub Pages**. Gratis, con URL pública siempre activa y publicación con un
+simple `git push`.
 
+> **Web:** https://dannyiwakura.github.io/marketing-viral/  
 > El sitio original de Wix Studio 2 queda obsoleto: este proyecto lo replica.
 
 ---
@@ -19,6 +20,7 @@ publicación con un simple `git push`.
 | `public/data/tes.json` | **El contenido**: 84 fichas (76 del directorio + 8 destacados) |
 | `public/banners/` | 84 banners de los exchanges (468×60) |
 | `public/admin/` | Panel Decap CMS (`/admin`) |
+| `.pages.yml` | Panel Pages CMS (online, sin OAuth) |
 | `design-reference/` | Capturas y mediciones del diseño original (referencia) |
 | `DESIGN-NOTES.md` | Especificación de diseño y estado del proyecto |
 
@@ -57,46 +59,59 @@ npm run preview   # http://127.0.0.1:4173
 En local la app usa `BASE_PATH = '/'` automáticamente (`src/lib/site.js`), así que las
 rutas son `http://127.0.0.1:5173/`, `/all-tes`, `/top-10`.
 
-## Publicar en GitHub Pages
+## Publicado
 
-1. Crear el repositorio **DannyIwakura/marketing-viral** (público) en GitHub.
-2. Enlazar y subir:
+| | |
+|---|---|
+| **Web** | **https://dannyiwakura.github.io/marketing-viral/** |
+| **Repo** | https://github.com/DannyIwakura/marketing-viral |
+| **Hosting** | GitHub Pages (gratis, sin caducidad) |
+| **Despliegue** | automático en cada `git push` a `main` (`.github/workflows/deploy.yml`) |
 
-```powershell
-git remote add origin https://github.com/DannyIwakura/marketing-viral.git
-git push -u origin main
-```
+El repositorio ya está creado, el workflow ya ha desplegado y Pages está activado con
+*Source: GitHub Actions*. Cada push a `main` (o cada guardado desde el CMS) reconstruye y
+publica el sitio en ~1 minuto.
 
-3. En el repositorio: **Settings → Pages → Build and deployment → Source: `GitHub Actions`**.
-4. El workflow `.github/workflows/deploy.yml` publica en
-   `https://dannyiwakura.github.io/marketing-viral/` en cada push a `main`.
-
-Si el repo o el dominio cambian, actualiza `BASE_PATH` en `src/lib/site.js`:
-
-- repositorio de Pages → `'/marketing-viral/'`
-- dominio propio en la raíz → `'/'`
+Si algún día cambia el nombre del repo o se usa un dominio propio, actualiza `BASE_PATH` en
+`src/lib/site.js` (`'/marketing-viral/'` → `'/'`) y `site_url` en `public/admin/config.yml`.
 
 ## Editar el contenido
 
-### Opción A — en local (sin OAuth, funciona hoy)
+Hay tres formas, de la más cómoda a la más técnica.
+
+### Opción A — Pages CMS (online, sin instalar nada)
+
+1. Entra en **https://app.pagescms.org** y accede con GitHub.
+2. Instala la GitHub App **Pages CMS** solo en el repo `DannyIwakura/marketing-viral`.
+3. Abre el repositorio: verás la colección **Traffic Exchanges** con las 84 fichas.
+   Puedes añadir una ficha nueva, subir el banner, marcar *Destacado en portada* (máx. 8)
+   y guardar. El cambio se commitea y la web se actualiza sola.
+
+La configuración ya está escrita en `.pages.yml`.
+
+### Opción B — Decap CMS en local (sin OAuth)
 
 ```powershell
-npm run cms        # npx decap-server
+npm run cms        # npx decap-server (puerto 8081)
 ```
 
-Abre `http://localhost:8080/admin/`, edita las fichas y guarda: Decap crea el commit.
-Después `git push` y la web se actualiza.
+Abre `http://localhost:8081/admin/`, edita y guarda: Decap escribe
+`public/data/tes.json` y hace el commit. Después `git push`.
 
-### Opción B — panel online en `/admin`
+### Opción C — Decap CMS online en `/admin` (requiere configuración única)
 
-Requiere (una sola vez):
+El panel `/admin` del sitio publicado ya carga, pero para entrar necesita una
+**GitHub OAuth App** + un **proxy OAuth** gratuito:
 
-1. Crear una **GitHub OAuth App**:
+1. Crear una GitHub OAuth App:
    - Homepage URL: `https://dannyiwakura.github.io/marketing-viral/`
    - Authorization callback URL: `https://dannyiwakura.github.io/marketing-viral/admin/`
-2. Desplegar un **proxy OAuth gratuito** para Decap (Netlify o Vercel, plan free) y
-   apuntar `base_url` a él. Guía: https://decapcms.org/docs/github-backend/
-3. En `public/admin/config.yml`: poner `client_id`, `base_url` y `local_backend: false`.
+2. Desplegar un proxy OAuth gratuito para Decap (Netlify, Vercel o Cloudflare Worker)
+   y usar su URL: https://decapcms.org/docs/github-backend/
+3. En `public/admin/config.yml`: descomentar `client_id` y `base_url`, y poner
+   `local_backend: false`.
+
+**Recomendado:** usa la Opción A y déjate de OAuth.
 
 ---
 

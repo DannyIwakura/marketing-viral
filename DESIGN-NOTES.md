@@ -27,12 +27,14 @@ no se quejen de la URL.
 | Tokens de marca (`theme.css`) | ✅ |
 | **CSS de layout completo (`app.css`)** | ✅ escrito con la spec de este documento |
 | Menú hamburguesa en móvil | ✅ `src/components/Header.jsx` |
-| Panel Decap (`public/admin/index.html` + `config.yml`) | ✅ listo (OAuth pendiente del usuario) |
+| Panel Decap (`public/admin/index.html` + `config.yml`) | ✅ (local OK; online requiere OAuth) |
+| Panel Pages CMS (`.pages.yml`) | ✅ (online sin OAuth, instalando la GitHub App) |
 | Workflow de GitHub Pages (`.github/workflows/deploy.yml`) | ✅ |
 | `README.md` con instrucciones de push/OAuth | ✅ |
 | `npm install` + `npm run build` + verificación visual | ✅ build OK, 8/76/10 tarjetas renderizadas |
-| Repositorio git local con commit inicial | ✅ `98ae3e5` (sin remote: el push lo hace el usuario) |
-| Iframe en el repo Velo viejo (`dannyiwakura/src/public/embed.js`) | ⬜ pendiente (requiere URL pública viva) |
+| Repositorio git local con commit inicial | ✅ |
+| **Publicado en GitHub Pages** | ✅ https://dannyiwakura.github.io/marketing-viral/ |
+| Iframe en el repo Velo viejo (`dannyiwakura/src/public/embed.js`) | ⬜ pendiente (solo publicar con OK explícito) |
 
 Referencias guardadas en `design-reference/`:
 
@@ -171,21 +173,21 @@ la visita al exchange es una navegación normal y no se filtra el dominio del si
 
 ---
 
-## 6. Despliegue (GitHub Pages) — pasos pendientes
+## 6. Despliegue (GitHub Pages) — hecho
 
-1. Crear el repo `DannyIwakura/marketing-viral` (público).
-2. `git remote add origin https://github.com/DannyIwakura/marketing-viral.git`
-3. `git push -u origin main`
-4. Workflow `.github/workflows/deploy.yml`:
-   `actions/checkout@v4` → `actions/setup-node@v4` (node 20) → `npm ci` → `npm run build` →
-   `actions/upload-pages-artifact@v3` → `actions/deploy-pages@v4`
-   (permisos: `contents: read`, `pages: write`, `id-token: write`).
-5. En el repo: **Settings → Pages → Source: GitHub Actions**.
-6. La URL será `https://dannyiwakura.github.io/marketing-viral/`.
-   `BASE_PATH` (`src/lib/site.js`) debe coincidir con esa ruta; si se cambia el repo o se usa
-   dominio propio, poner `BASE_PATH = '/'`.
-7. `scripts/postbuild.mjs` ya copia `dist/index.html` → `dist/404.html` para que el routing
-   en cliente sobreviva a los refrescos en GitHub Pages.
+| | |
+|---|---|
+| Web | https://dannyiwakura.github.io/marketing-viral/ |
+| Repo | https://github.com/DannyIwakura/marketing-viral |
+| Remote local | `origin` → `https://github.com/DannyIwakura/marketing-viral.git` (rama `main`) |
+| Pages | activado con *Source: GitHub Actions* (`build_type: workflow`) |
+
+Cada `git push` a `main` dispara `.github/workflows/deploy.yml` y publica en ~1 minuto.
+`scripts/postbuild.mjs` copia `dist/index.html` → `dist/404.html` para que el routing en
+cliente (`/all-tes`, `/top-10`) sobreviva a un refresco directo.
+
+Si cambia el repo o se usa dominio propio: `BASE_PATH` en `src/lib/site.js` (`'/'`) y
+`site_url` en `public/admin/config.yml`.
 
 ---
 
