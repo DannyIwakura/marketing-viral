@@ -26,10 +26,12 @@ no se quejen de la URL.
 | Componentes y páginas (Home / All TEs / Top 10) | ✅ `src/components`, `src/pages` |
 | Tokens de marca (`theme.css`) | ✅ |
 | **CSS de layout completo (`app.css`)** | ✅ escrito con la spec de este documento |
-| Panel Decap (`public/admin/index.html` + `config.yml`) | ⬜ pendiente |
-| Workflow de GitHub Pages (`.github/workflows/deploy.yml`) | ⬜ pendiente |
-| `README.md` con instrucciones de push/OAuth | ⬜ pendiente |
-| `npm install` + `npm run build` + verificación visual | ⬜ pendiente |
+| Menú hamburguesa en móvil | ✅ `src/components/Header.jsx` |
+| Panel Decap (`public/admin/index.html` + `config.yml`) | ✅ listo (OAuth pendiente del usuario) |
+| Workflow de GitHub Pages (`.github/workflows/deploy.yml`) | ✅ |
+| `README.md` con instrucciones de push/OAuth | ✅ |
+| `npm install` + `npm run build` + verificación visual | ✅ build OK, 8/76/10 tarjetas renderizadas |
+| Repositorio git local con commit inicial | ✅ `98ae3e5` (sin remote: el push lo hace el usuario) |
 | Iframe en el repo Velo viejo (`dannyiwakura/src/public/embed.js`) | ⬜ pendiente (requiere URL pública viva) |
 
 Referencias guardadas en `design-reference/`:
@@ -102,7 +104,8 @@ Por eso todo se expresa como `calc(var(--u) * N)`, donde `--u` es el factor de e
 **Cabecera:** logo a la izquierda (172 px a 1440; 126 px en móvil), menú a la derecha.
 Items en P2 (500), `shade-3`, `text-transform: capitalize` → "Home, All TEs, Top 10, Featured, How It Works".
 Separación 20 u entre etiquetas (padding-inline 10 u por enlace). Margen derecho ~15 u, logo con margen izquierdo ~25 u.
-En móvil el menú se mantiene en línea (fuente del diseño: ancho de menú 8.78 % del viewport, hamburger oculto).
+En móvil el menú se colapsa en un **botón hamburguesa** (34×34 px, 3 líneas de 2 px) que abre un
+panel desplegable con los items en mayúsculas sobre fondo `base-1` y borde `shade-2`.
 
 **HOME**
 1. Hero centrado: badge → H1 (88 % de ancho) → lead (58 %) → botón.
