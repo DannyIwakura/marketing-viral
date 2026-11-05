@@ -131,8 +131,8 @@ y su URL no se pierde. Para que además muestre el sitio nuevo dentro, hay tres 
 > En el repo Velo, `src/public/` son módulos importables, **no** ficheros estáticos
 > públicos: por eso un `embed.js` suelto no se ejecuta solo.
 
-Los banners usan `target="_top"` + `rel="noreferrer"`: la visita al exchange es una
-navegación normal a pantalla completa y no se filtra el dominio del sitio nuevo.
+Los banners usan `target="_blank"` + `rel="noopener noreferrer"`: la visita al exchange se
+abre en una pestaña nueva y el directorio sigue abierto detrás.
 
 ## Licencia / notas
 

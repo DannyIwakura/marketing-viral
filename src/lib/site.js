@@ -17,11 +17,11 @@ export const SITE = {
     description:
         'A hand-picked directory of the traffic exchanges that send real visitors. Pick one, register free and start driving traffic to your offers.',
 
-    // Los banners abren en la ventana principal (_top) para que la visita al
-    // exchange sea una navegacion normal, y con rel="noreferrer" para no
-    // filtrar el dominio del sitio nuevo a los exchanges que se quejan de la URL.
-    linkTarget: '_top',
-    linkRel: 'noreferrer',
+    // Los banners abren en una pestaña nueva. rel="noopener noreferrer" evita
+    // que la pagina del exchange pueda manipular esta ventana (tabnabbing) y no
+    // le pasa la URL desde la que se llega.
+    linkTarget: '_blank',
+    linkRel: 'noopener noreferrer',
 
     // Cuantos destacados se muestran en portada.
     featuredLimit: 8,

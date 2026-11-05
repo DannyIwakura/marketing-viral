@@ -128,8 +128,9 @@ panel desplegable con los items en mayúsculas sobre fondo `base-1` y borde `sha
 
 ### 3.5 Enlaces de los banners
 
-Los banners abren en la ventana principal (`target="_top"`) con `rel="noreferrer"`:
-la visita al exchange es una navegación normal y no se filtra el dominio del sitio nuevo.
+Los banners abren en una **pestaña nueva** (`target="_blank"`) con
+`rel="noopener noreferrer"`: el directorio sigue abierto detrás y la página del exchange no
+puede manipular esta ventana ni recibe la URL desde la que se llega.
 
 ### 3.6 Palabra que rota en el H1 del HOME
 
