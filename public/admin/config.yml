@@ -1,0 +1,89 @@
+# ---------------------------------------------------------------------------
+# Decap CMS - configuracion del panel de contenido de Marketing Viral.
+#
+# EDICION LOCAL (sin OAuth, gratis, inmediato):
+#   1) npm run cms            (o: npx decap-server)
+#   2) abre http://localhost:8080/admin/
+#   3) guarda -> commit en la rama main -> push -> GitHub Pages redespliega
+#
+# EDICION ONLINE (en el /admin publicado) - requiere dos pasos del usuario:
+#   1) Crear una GitHub OAuth App:
+#        Homepage URL:        https://dannyiwakura.github.io/marketing-viral/
+#        Callback URL:        https://dannyiwakura.github.io/marketing-viral/admin/
+#      -> copiar el Client ID.
+#   2) Desplegar un proxy OAuth gratuito para Decap (Netlify/Vercel free) y poner
+#      su URL en base_url. Ese proxy es el que intercambia el codigo por el token.
+#      Documentacion: https://decapcms.org/docs/github-backend/
+#      -> poner client_id y base_url, y poner local_backend: false.
+#
+# Nota: si el repositorio o el dominio cambian, actualizar tambien
+#       site_url / display_url / base_url y BASE_PATH en src/lib/site.js.
+# ---------------------------------------------------------------------------
+
+backend:
+  name: github
+  repo: DannyIwakura/marketing-viral
+  branch: main
+  # base_url: https://TU-OAUTH-PROXY.netlify.app
+  # client_id: TU_CLIENT_ID
+
+# Editar en local con `npx decap-server` sin necesidad de OAuth.
+# Poner en `false` cuando se configure el proxy OAuth para el panel online.
+local_backend: true
+
+media_folder: public/banners
+media_folder_static: public/banners
+public_folder: /banners
+
+site_url: https://dannyiwakura.github.io/marketing-viral
+display_url: https://dannyiwakura.github.io/marketing-viral
+logo_url: https://dannyiwakura.github.io/marketing-viral/logo.png
+
+publish_mode: editorial_workflow
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: tes
+    label: Traffic Exchanges
+    label_singular: Traffic Exchange
+    description: 'Las fichas del directorio. "Aparece en el directorio" = true las lista en ALL TEs; los destacados de portada se marcan con "Destacado en portada".'
+    file: public/data/tes.json
+    format: json
+    identifier_field: id
+    summary: '{{title}}'
+    sortable_fields: [rank, title]
+    fields:
+      - label: Nombre
+        name: title
+        widget: string
+        hint: 'Nombre del exchange, p. ej. EasyHits4U'
+      - label: URL de referido
+        name: url
+        widget: string
+        hint: 'Link completo con el identificante de referido, p. ej. https://ejemplo.com/?rid=123'
+      - label: Posición en el directorio
+        name: rank
+        widget: number
+        value_type: int
+        min: 1
+        required: false
+        hint: 'Orden en ALL TEs. Los 10 primeros forman el TOP 10.'
+      - label: Banner
+        name: banner
+        widget: image
+        choose_url: false
+        required: false
+        hint: 'Banner del exchange (468x60 px recomendado).'
+      - label: Destacado en la portada
+        name: featured
+        widget: boolean
+        default: false
+        hint: 'Aparece en la portada (se muestran los 8 primeros destacados).'
+      - label: Aparece en el directorio (ALL TEs)
+        name: listed
+        widget: boolean
+        default: true
+        hint: 'Desmarcalo si la ficha es solo un destacado de portada.'

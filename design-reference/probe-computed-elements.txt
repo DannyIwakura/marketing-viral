@@ -1,0 +1,147 @@
+﻿­ƒÄ¡ Playwright Skill - Universal Executor
+
+­ƒôä Executing file: C:/Users/PC/AppData/Local/Temp/opencode/probe-style2.cjs
+­ƒÜÇ Starting automation...
+
+{
+ "badge": {
+  "text": "76 traffic exchanges ┬À hand-picked",
+  "box": {
+   "w": 351,
+   "h": 24,
+   "x": 544,
+   "y": 252
+  },
+  "css": {
+   "background-color": "rgba(0, 0, 0, 0)",
+   "border-top-color": "rgb(169, 179, 198)",
+   "border-top-width": "0px",
+   "border-radius": "0px",
+   "padding-top": "0px",
+   "padding-left": "0px"
+  }
+ },
+ "badgeTextCss": {
+  "font-size": "15.75px",
+  "color": "rgb(169, 179, 198)",
+  "letter-spacing": "1.26px",
+  "text-transform": "uppercase"
+ },
+ "eyebrow": {
+  "text": "Featured this month",
+  "css": {
+   "font-size": "15.75px",
+   "color": "rgb(185, 166, 255)",
+   "letter-spacing": "2.205px",
+   "text-transform": "uppercase",
+   "font-weight": "400"
+  },
+  "box": {
+   "w": 1303,
+   "h": 24,
+   "x": 68,
+   "y": 903
+  }
+ },
+ "sectionTitleCss": {
+  "font-size": "51.75px",
+  "font-weight": "700",
+  "line-height": "56.925px",
+  "letter-spacing": "-1.035px",
+  "color": "rgb(242, 244, 248)",
+  "margin-bottom": "0px"
+ },
+ "leadCss": {
+  "font-size": "18px",
+  "color": "rgb(169, 179, 198)",
+  "line-height": "27.9px",
+  "font-weight": "500"
+ },
+ "stepCard": null,
+ "stepTitleCss": {
+  "font-size": "24.75px",
+  "font-weight": "600",
+  "color": "rgb(242, 244, 248)",
+  "font-family": "wix-madefor-display-v2",
+  "line-height": "30.9375px"
+ },
+ "stepNumCss": {
+  "font-size": "31.5px",
+  "color": "rgb(185, 166, 255)",
+  "letter-spacing": "-0.315px",
+  "font-weight": "600"
+ },
+ "stepTextCss": {
+  "font-size": "18px",
+  "color": "rgb(169, 179, 198)",
+  "line-height": "27.9px",
+  "font-weight": "500"
+ },
+ "card": {
+  "cls": "comp-mw2blog82-overflow-wrapper overflowWrapp",
+  "box": {
+   "w": 640,
+   "h": 180,
+   "x": 68,
+   "y": 1091
+  },
+  "css": {
+   "border-radius": "16px",
+   "border-top-width": "0px",
+   "border-top-color": "rgb(0, 0, 0)",
+   "padding-top": "0px",
+   "padding-left": "0px"
+  }
+ },
+ "cardBg": null,
+ "bannerBox": {
+  "box": {
+   "w": 604,
+   "h": 71,
+   "x": 87,
+   "y": 1109
+  },
+  "css": {
+   "width": "603.906px",
+   "height": "70.5625px",
+   "object-fit": "contain",
+   "border-radius": "0px"
+  }
+ },
+ "cardTitleCss": {
+  "font-size": "20.25px",
+  "font-weight": "600",
+  "color": "rgb(242, 244, 248)",
+  "font-family": "wix-madefor-display-v2",
+  "line-height": "26.325px",
+  "margin-bottom": "0px"
+ },
+ "visitCss": {
+  "font-size": "15.75px",
+  "color": "rgb(185, 166, 255)",
+  "text-decoration-line": "none",
+  "font-weight": "400"
+ },
+ "band": [
+  {
+   "cls": "comp-muxt9fxx comp-muxt9fxx _background_x7ip3",
+   "bg": "color(srgb 0.0431373 0.0509804 0.0705882)",
+   "box": {
+    "w": 1440,
+    "h": 2828,
+    "x": 0,
+    "y": 0
+   }
+  },
+  {
+   "cls": "comp-mw2blol41 comp-mw2blol41 _background_x7i",
+   "bg": "color(srgb 0.0705882 0.0901961 0.133333)",
+   "box": {
+    "w": 1440,
+    "h": 1194,
+    "x": 0,
+    "y": 793
+   }
+  }
+ ]
+}

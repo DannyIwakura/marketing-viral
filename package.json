@@ -1,0 +1,24 @@
+{
+  "name": "marketing-viral",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Marketing Viral — directorio de Traffic Exchanges con panel Decap CMS y despliegue en GitHub Pages",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/postbuild.mjs",
+    "preview": "vite preview --port 4173",
+    "cms": "npx decap-server"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/space-grotesk": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

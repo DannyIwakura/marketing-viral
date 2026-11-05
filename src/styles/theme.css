@@ -1,0 +1,158 @@
+/* ---------------------------------------------------------------------------
+   Tokens de marca + escala del diseño.
+
+   El diseño original de Wix Studio 2 escala con el viewport: su unidad de
+   referencia es 1265 px de ancho. Aquí se reproduce con --u, un factor que
+   multiplica todas las medidas (unidades de diseño -> px reales).
+
+   Escritorio: --u = min(100vw, 1920px) / 1265
+   Móvil:       --u = min(100vw, 700px)  / 390   (tokens de móvil abajo)
+--------------------------------------------------------------------------- */
+:root {
+    --base-1: #0b0d12;
+    --base-2: #f2f4f8;
+    --shade-1: #121722;
+    --shade-2: #2a3140;
+    --shade-3: #a9b3c6;
+    --accent-1: #6c4cf5;
+    --accent-2: #8a6fff;
+    --accent-3: #b9a6ff;
+    --accent-4: #211a3b;
+
+    --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    --font-text: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+    /* Factor de escala (1 / 1265). */
+    --u: calc(min(100vw, 1920px) * 0.00079051);
+
+    /* Tamaños de fuente (unidades de diseño). */
+    --fs-h1: 76;
+    --fs-h2: 46;
+    --fs-h3: 28;
+    --fs-h4: 22;
+    --fs-h5: 18;
+    --fs-p1: 19;
+    --fs-p2: 16;
+    --fs-p3: 14;
+
+    /* Espaciados (unidades de diseño). */
+    --pad-x: 60;
+    --pad-section: 96;
+    --pad-hero: 120;
+    --pad-head-bottom: 48;
+    --pad-grid-top: 72;
+    --sp-badge: 26;
+    --sp-title-lead: 12;
+    --sp-lead-btn: 36;
+    --sp-eyebrow: 12;
+    --sp-h2-lead: 14;
+    --sp-lead-grid: 44;
+    --sp-grid: 20;
+    --sp-card-pad: 16;
+    --sp-card-img: 10;
+    --sp-card-title: 8;
+    --sp-steps-gap: 24;
+    --sp-step-pad: 28;
+    --sp-cta: 48;
+    --sp-nav-x: 10;
+    --sp-header-y: 25;
+
+    --radius: 16px;
+    --radius-pill: calc(var(--u) * 100);
+    --border: 1px solid var(--shade-2);
+}
+
+@media (max-width: 1023px) {
+    :root {
+        --u: calc(min(100vw, 700px) * 0.0025641);
+
+        --fs-h1: 38;
+        --fs-h2: 30;
+        --fs-h3: 21;
+        --fs-h4: 19;
+        --fs-h5: 17;
+        --fs-p1: 17;
+        --fs-p2: 15;
+        --fs-p3: 13;
+
+        --pad-x: 20;
+        --pad-section: 56;
+        --pad-hero: 56;
+        --pad-head-bottom: 32;
+        --pad-grid-top: 40;
+        --sp-badge: 18;
+        --sp-title-lead: 10;
+        --sp-lead-btn: 24;
+        --sp-eyebrow: 10;
+        --sp-h2-lead: 12;
+        --sp-lead-grid: 28;
+        --sp-grid: 14;
+        --sp-card-pad: 14;
+        --sp-card-img: 8;
+        --sp-card-title: 6;
+        --sp-steps-gap: 14;
+        --sp-step-pad: 24;
+        --sp-cta: 40;
+        --sp-nav-x: 7;
+        --sp-header-y: 21;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--base-1);
+    color: var(--base-2);
+    font-family: var(--font-text);
+    font-size: calc(var(--u) * var(--fs-p2));
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-display);
+    margin: 0;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}

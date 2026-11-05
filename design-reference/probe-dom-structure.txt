@@ -1,0 +1,222 @@
+﻿­ƒÄ¡ Playwright Skill - Universal Executor
+
+­ƒôä Executing file: C:/Users/PC/AppData/Local/Temp/opencode/probe-style3.cjs
+­ƒÜÇ Starting automation...
+
+{
+ "stepChain": [
+  {
+   "tag": "H3",
+   "cls": "",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(242, 244, 248)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 353,
+   "h": 31
+  },
+  {
+   "tag": "DIV",
+   "cls": "WRichTextNewSkin__D0M1g supportTableDesign__Lc0ts comp-",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(242, 244, 248)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 353,
+   "h": 31
+  },
+  {
+   "tag": "DIV",
+   "cls": "comp-mw2bloll-container",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px",
+   "pad": "31.8735px 31.8735px",
+   "w": 416,
+   "h": 243
+  },
+  {
+   "tag": "DIV",
+   "cls": "comp-mw2bloll-overflow-wrapper overflowWrapper__-futq",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "16px",
+   "pad": "0px 0px",
+   "w": 416,
+   "h": 243
+  },
+  {
+   "tag": "DIV",
+   "cls": "container internalContainerRoot__MJnN1 comp-mw2bloll",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 416,
+   "h": 243
+  },
+  {
+   "tag": "DIV",
+   "cls": "root__eLvEL container comp-mw2blolk1 comp-mw2blolk1",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 416,
+   "h": 243
+  },
+  {
+   "tag": "DIV",
+   "cls": "comp-mw2blolk-container",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 1303,
+   "h": 243
+  },
+  {
+   "tag": "DIV",
+   "cls": "comp-mw2blolk-overflow-wrapper overflowWrapper__-futq",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 1303,
+   "h": 243
+  },
+  {
+   "tag": "DIV",
+   "cls": "container internalContainerRoot__MJnN1 comp-mw2blolk",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 1303,
+   "h": 243
+  }
+ ],
+ "cardChain": [
+  {
+   "tag": "IMG",
+   "cls": "",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 238)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 604,
+   "h": 71
+  },
+  {
+   "tag": "PICTURE",
+   "cls": "",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 238)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 604,
+   "h": 11
+  },
+  {
+   "tag": "WOW-IMAGE",
+   "cls": "wowImage__1yncg",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 238)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 604,
+   "h": 71
+  },
+  {
+   "tag": "DIV",
+   "cls": "imageLayer__w0TXF",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 238)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 604,
+   "h": 71
+  },
+  {
+   "tag": "DIV",
+   "cls": "image3__6ufCe",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px solid rgb(0, 0, 238)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 604,
+   "h": 71
+  },
+  {
+   "tag": "A",
+   "cls": "linkLayer__hoVt-",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 238)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 604,
+   "h": 71
+  },
+  {
+   "tag": "DIV",
+   "cls": "root__FuiJG comp-mw2blog9 comp-mw2blog9 image",
+   "bg": "rgba(0, 0, 0, 0)",
+   "border": "0px none rgb(0, 0, 0)",
+   "radius": "0px",
+   "pad": "0px 0px",
+   "w": 604,
+   "h": 71
+  }
+ ],
+ "layerCount": 0,
+ "layerStyles": [
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 1440,
+   "h": 108
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 1440,
+   "h": 686
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 387,
+   "h": 40
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 1440,
+   "h": 1194
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 1303,
+   "h": 787
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 640,
+   "h": 180
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 640,
+   "h": 180
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorde",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": 640,
+   "h": 180
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+﻿­ƒÄ¡ Playwright Skill - Universal Executor
+
+­ƒôä Executing file: C:/Users/PC/AppData/Local/Temp/opencode/probe-style.cjs
+­ƒÜÇ Starting automation...
+
+{
+ "body": {
+  "background-color": "rgba(0, 0, 0, 0)",
+  "color": "rgb(0, 0, 0)",
+  "font-family": "Arial, Helvetica, sans-serif",
+  "font-size": "10px"
+ },
+ "h1": {
+  "text": "Real traffic for your offers, from one place.",
+  "box": {
+   "w": 1147,
+   "h": 174,
+   "x": 147,
+   "y": 314
+  },
+  "css": {
+   "font-family": "wix-madefor-display-v2",
+   "font-size": "85.5px",
+   "font-weight": "700",
+   "line-height": "87.21px",
+   "letter-spacing": "-2.565px",
+   "color": "rgb(242, 244, 248)",
+   "text-align": "center"
+  }
+ },
+ "h2s": [
+  {
+   "text": "Eight exchanges to start with",
+   "css": {
+    "font-family": "wix-madefor-display-v2",
+    "font-size": "51.75px",
+    "font-weight": "700",
+    "line-height": "56.925px",
+    "letter-spacing": "-1.035px",
+    "color": "rgb(242, 244, 248)"
+   },
+   "box": {
+    "w": 912,
+    "h": 57,
+    "x": 68,
+    "y": 940
+   }
+  },
+  {
+   "text": "Three steps, no cost to start",
+   "css": {
+    "font-family": "wix-madefor-display-v2",
+    "font-size": "51.75px",
+    "font-weight": "700",
+    "line-height": "56.925px",
+    "letter-spacing": "-1.035px",
+    "color": "rgb(242, 244, 248)"
+   },
+   "box": {
+    "w": 808,
+    "h": 57,
+    "x": 68,
+    "y": 2134
+   }
+  }
+ ],
+ "eyebrow": {
+  "text": "76 traffic exchanges ┬À hand-picked",
+  "css": {
+   "font-size": "15.75px",
+   "color": "rgb(169, 179, 198)",
+   "letter-spacing": "1.26px",
+   "text-transform": "uppercase",
+   "font-weight": "400"
+  }
+ },
+ "btn": {
+  "text": "Start with the featured 8",
+  "box": {
+   "w": 270,
+   "h": 59,
+   "x": 585,
+   "y": 2539
+  },
+  "css": {
+   "background-color": "rgb(108, 76, 245)",
+   "color": "rgb(0, 0, 0)",
+   "font-size": "13.3333px",
+   "font-weight": "400",
+   "border-radius": "112.5px",
+   "padding-top": "15.75px",
+   "padding-left": "31.5px",
+   "letter-spacing": "normal"
+  }
+ },
+ "sections": [
+  {
+   "cls": "comp-muxt9fxx comp-muxt9fxx _background_x7ip3_1 _mask_x7ip3_",
+   "h": 2828,
+   "y": 0,
+   "bg": "color(srgb 0.0431373 0.0509804 0.0705882)"
+  },
+  {
+   "cls": "origami-section comp-mw2blodv",
+   "h": 686,
+   "y": 108,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "container internalContainerRoot__MJnN1 comp-mw2blodx",
+   "h": 686,
+   "y": 108,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "comp-mw2blodx-overflow-wrapper overflowWrapper__-futq",
+   "h": 686,
+   "y": 108,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "comp-mw2blodx-container",
+   "h": 686,
+   "y": 108,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "origami-section comp-mw2blofx1",
+   "h": 1194,
+   "y": 793,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "container internalContainerRoot__MJnN1 comp-mw2blofy",
+   "h": 1194,
+   "y": 793,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "comp-mw2blol41 comp-mw2blol41 _background_x7ip3_1 _mask_x7ip",
+   "h": 1194,
+   "y": 793,
+   "bg": "color(srgb 0.0705882 0.0901961 0.133333)"
+  },
+  {
+   "cls": "comp-mw2blofy-overflow-wrapper overflowWrapper__-futq",
+   "h": 1194,
+   "y": 793,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "comp-mw2blofy-container",
+   "h": 1194,
+   "y": 793,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "root__eLvEL container comp-mw2blog72 comp-mw2blog72",
+   "h": 787,
+   "y": 1091,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "container internalContainerRoot__MJnN1 comp-mw2blog8",
+   "h": 787,
+   "y": 1091,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "comp-mw2blog8-overflow-wrapper overflowWrapper__-futq",
+   "h": 787,
+   "y": 1091,
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  {
+   "cls": "comp-mw2blog8-container",
+   "h": 787,
+   "y": 1091,
+   "bg": "rgba(0, 0, 0, 0)"
+  }
+ ],
+ "cardCandidates": [
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorder__cg",
+   "css": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-top-color": "rgba(0, 0, 0, 0)",
+    "border-top-width": "1px",
+    "border-radius": "16px",
+    "padding-top": "0px"
+   },
+   "box": {
+    "w": 640,
+    "h": 180,
+    "x": 68,
+    "y": 1091
+   }
+  },
+  {
+   "cls": "borderFrame__YJBdZ",
+   "css": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-top-color": "rgb(42, 49, 64)",
+    "border-top-width": "1px",
+    "border-radius": "16px",
+    "padding-top": "0px"
+   },
+   "box": {
+    "w": 640,
+    "h": 180,
+    "x": 68,
+    "y": 1091
+   }
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorder__cg",
+   "css": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-top-color": "rgba(0, 0, 0, 0)",
+    "border-top-width": "1px",
+    "border-radius": "16px",
+    "padding-top": "0px"
+   },
+   "box": {
+    "w": 640,
+    "h": 180,
+    "x": 731,
+    "y": 1091
+   }
+  },
+  {
+   "cls": "borderFrame__YJBdZ",
+   "css": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-top-color": "rgb(42, 49, 64)",
+    "border-top-width": "1px",
+    "border-radius": "16px",
+    "padding-top": "0px"
+   },
+   "box": {
+    "w": 640,
+    "h": 180,
+    "x": 731,
+    "y": 1091
+   }
+  },
+  {
+   "cls": "backgroundLayer__ZDd0Q backgroundLayerNoBorder__cg",
+   "css": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-top-color": "rgba(0, 0, 0, 0)",
+    "border-top-width": "1px",
+    "border-radius": "16px",
+    "padding-top": "0px"
+   },
+   "box": {
+    "w": 640,
+    "h": 180,
+    "x": 68,
+    "y": 1293
+   }
+  },
+  {
+   "cls": "borderFrame__YJBdZ",
+   "css": {
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-top-color": "rgb(42, 49, 64)",
+    "border-top-width": "1px",
+    "border-radius": "16px",
+    "padding-top": "0px"
+   },
+   "box": {
+    "w": 640,
+    "h": 180,
+    "x": 68,
+    "y": 1293
+   }
+  }
+ ],
+ "img": {
+  "box": {
+   "w": 172,
+   "h": 34,
+   "x": 28,
+   "y": 34
+  },
+  "css": {
+   "width": "171.5px",
+   "height": "33.6562px",
+   "border-radius": "0px",
+   "object-fit": "contain"
+  }
+ },
+ "stepCard": {
+  "cls": "",
+  "css": {
+   "background-color": "rgba(0, 0, 0, 0)",
+   "border-top-color": "rgb(0, 0, 0)",
+   "border-top-width": "0px",
+   "border-radius": "0px",
+   "padding-top": "0px"
+  },
+  "box": {
+   "w": 1440,
+   "h": 900,
+   "x": 0,
+   "y": 0
+  }
+ },
+ "fonts": [
+  "Arial, Helvetica, sans-serif",
+  "helvetica-w01-roman",
+  "wix-madefor-text-v2",
+  "Arial",
+  "wix-madefor-display-v2"
+ ]
+}
