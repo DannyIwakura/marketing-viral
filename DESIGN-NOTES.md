@@ -91,7 +91,7 @@ Por eso todo se expresa como `calc(var(--u) * N)`, donde `--u` es el factor de e
 |---|---|
 | Contenedor | max-width 1920 px, padding lateral 60 u (20 u en móvil) |
 | Padding de sección | 96 u arriba y abajo (56 u móvil) |
-| Padding del hero | 120 u (56 u móvil) |
+| Padding del hero | 64 u arriba y abajo (32 u móvil). Antes 120/56: se redujo para subir el hero |
 | Cabecera ALL TEs | padding-top 96 u, padding-bottom 48 u; la rejilla arranca con 72 u |
 | Rejilla de TEs | 2 columnas, gap 20 u (14 u móvil); 1 columna en móvil |
 | Rejilla de pasos | 3 columnas, gap 24 u (14 u móvil); 1 columna en móvil |
@@ -114,6 +114,8 @@ panel desplegable con los items en mayúsculas sobre fondo `base-1` y borde `sha
 1. Hero centrado: badge → H1 (88 % de ancho) → lead (58 %) → botón.
    - Badge: fondo `shade-1`, borde 1 px `shade-2`, radio 16 px, padding 7 u 16 u,
      texto P3 uppercase, ls 0.08em, color `shade-3`. Margen inferior 26 u.
+     El número son **todas las fichas del CMS** (directorio + destacados: 84 hoy), calculado en
+     tiempo de ejecución; no hay ninguna cifra escrita a mano.
    - Lead: P1, `shade-3`, margen inferior 36 u.
 2. Banda `featured` (fondo `shade-1`): eyebrow "Featured this month" (P3 accent-3, ls 0.14em),
    H2 "Eight exchanges to start with" (70 % de ancho), lead P2 (52 % de ancho),

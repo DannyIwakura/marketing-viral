@@ -38,7 +38,7 @@
     /* Espaciados (unidades de diseño). */
     --pad-x: 60;
     --pad-section: 96;
-    --pad-hero: 120;
+    --pad-hero: 64;
     --pad-head-bottom: 48;
     --pad-grid-top: 72;
     --sp-badge: 26;
@@ -77,7 +77,7 @@
 
         --pad-x: 20;
         --pad-section: 56;
-        --pad-hero: 56;
+        --pad-hero: 32;
         --pad-head-bottom: 32;
         --pad-grid-top: 40;
         --sp-badge: 18;

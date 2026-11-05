@@ -10,15 +10,15 @@ export default function Top10() {
         <>
             <Seo
                 title="Top 10"
-                description={`The ${top.length || 10} exchanges worth starting with. Our ranking of the ${total || 76} exchanges in the directory.`}
+                description={`The ${top.length || '…'} exchanges worth starting with. Our ranking of the ${total || '…'} exchanges in the directory.`}
             />
 
             <section className="section page-head">
                 <div className="container">
                     <p className="eyebrow">The shortlist</p>
-                    <h1 className="page-title">The {top.length || 10} exchanges worth starting with</h1>
+                    <h1 className="page-title">The {top.length || '…'} exchanges worth starting with</h1>
                     <p className="page-lead">
-                        Our ranking of the {total || 76} exchanges in the directory. Every banner is a live referral link, so
+                        Our ranking of the {total || '…'} exchanges in the directory. Every banner is a live referral link, so
                         you can register and start sending visitors right away.
                     </p>
 

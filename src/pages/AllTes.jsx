@@ -10,13 +10,13 @@ export default function AllTes() {
         <>
             <Seo
                 title="All TEs"
-                description={`All ${total || 76} traffic exchanges. Every banner is a live referral link: click one, register free and start sending visitors to your pages.`}
+                description={`All ${total || '…'} traffic exchanges. Every banner is a live referral link: click one, register free and start sending visitors to your pages.`}
             />
 
             <section className="section page-head">
                 <div className="container">
                     <p className="eyebrow">The complete list</p>
-                    <h1 className="page-title">All {total || 76} traffic exchanges</h1>
+                    <h1 className="page-title">All {total || '…'} traffic exchanges</h1>
                     <p className="page-lead">
                         Every banner below is a live referral link. Click one, register free and start sending visitors to
                         your pages.

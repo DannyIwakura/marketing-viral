@@ -30,7 +30,7 @@ const countWord = (n) => WORDS[n] ?? String(n)
 
 export default function Home() {
     const { loading, error, tes } = useContent()
-    const { listed, featured, total } = selectContent(tes)
+    const { listed, featured } = selectContent(tes)
 
     return (
         <>
@@ -41,7 +41,9 @@ export default function Home() {
 
             <section className="section hero">
                 <div className="container hero-inner">
-                    <p className="badge">{total || 76} traffic exchanges · hand-picked</p>
+                    {/* El numero sale del CMS: son todas las fichas (las del
+                        directorio + las destacadas), no una cifra escrita a mano. */}
+                    <p className="badge">{tes.length ? `${tes.length} traffic exchanges · hand-picked` : '\u00a0'}</p>
                     <h1 className="hero-title">
                         <span className="sr-only">
                             Real traffic for your offers, services, products, referrals, blog and website, from one place.

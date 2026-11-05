@@ -24,8 +24,9 @@ simple `git push`.
 | `design-reference/` | Capturas y mediciones del diseño original (referencia) |
 | `DESIGN-NOTES.md` | Especificación de diseño y estado del proyecto |
 
-El sitio es **data-driven**: los contadores ("All 76 traffic exchanges", "Top 10"), los
-listados y la portada se calculan a partir de `public/data/tes.json`.
+El sitio es **data-driven**: los contadores ("84 traffic exchanges", "All 76 traffic exchanges",
+"Top 10"), los listados y la portada se calculan a partir de `public/data/tes.json`. No hay
+ninguna cifra escrita a mano: si añades o quitas fichas en el CMS, los números cambian solos.
 
 ### Modelo de datos
 
