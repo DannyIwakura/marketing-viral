@@ -1,760 +1,769 @@
 {
- "tes": [
-  {
-   "id": "te-01",
-   "title": "EasyHits4U",
-   "url": "http://www.easyhits4u.com/?ref=neogeox",
-   "rank": 1,
-   "banner": "/banners/te-01.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-02",
-   "title": "The Downliner",
-   "url": "https://thedownliner.com/?r=31432",
-   "rank": 2,
-   "banner": "/banners/te-02.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-03",
-   "title": "Tweetyfied Surf",
-   "url": "https://tweetyfied-surf.com/supersplash.php?rid=4290",
-   "rank": 3,
-   "banner": "/banners/te-03.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-04",
-   "title": "Jungle Clicks Traffic",
-   "url": "https://jungleclickstraffic.com/?rid=1084",
-   "rank": 4,
-   "banner": "/banners/te-04.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-05",
-   "title": "Postman Hits",
-   "url": "https://postmanhits.com/?rid=5973",
-   "rank": 5,
-   "banner": "/banners/te-05.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-06",
-   "title": "TurboX Traffic",
-   "url": "https://turboxtraffic.com/rejestracja.php?id=1517",
-   "rank": 6,
-   "banner": "/banners/te-06.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-07",
-   "title": "Business Trafficy",
-   "url": "https://businesstrafficy.com?ref=494",
-   "rank": 7,
-   "banner": "/banners/te-07.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-08",
-   "title": "Finest Traffic",
-   "url": "https://finesttraffic.com/?rid=1761",
-   "rank": 8,
-   "banner": "/banners/te-08.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-09",
-   "title": "Vikings Hits",
-   "url": "https://vikingshits.com/?rid=790",
-   "rank": 9,
-   "banner": "/banners/te-09.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-10",
-   "title": "The Happy Pig Country",
-   "url": "https://thehappypigcountry.com/?rid=6459",
-   "rank": 10,
-   "banner": "/banners/te-10.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-11",
-   "title": "ActualHits4U",
-   "url": "https://actualhits4u.com/?rid=9583",
-   "rank": 11,
-   "banner": "/banners/te-11.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-12",
-   "title": "LeadsLeap",
-   "url": "https://leadsleap.com/?r=dannyiwakura",
-   "rank": 12,
-   "banner": "/banners/te-12.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-13",
-   "title": "Welthbilder Hits",
-   "url": "https://welthbilderhits.com/?rid=718",
-   "rank": 13,
-   "banner": "/banners/te-13.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-14",
-   "title": "TEHits4U",
-   "url": "https://tehits4u.com/?rid=545",
-   "rank": 14,
-   "banner": "/banners/te-14.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-15",
-   "title": "You2Surf",
-   "url": "https://you2surf.com/?rid=14452",
-   "rank": 15,
-   "banner": "/banners/te-15.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-16",
-   "title": "Surfing Champions",
-   "url": "https://surfingchampions.com/?rid=965",
-   "rank": 16,
-   "banner": "/banners/te-16.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-17",
-   "title": "6SecSurf",
-   "url": "https://6secsurf.club/?rid=2228",
-   "rank": 17,
-   "banner": "/banners/te-17.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-18",
-   "title": "QualityHits4U",
-   "url": "https://qualityhits4u.net/?rid=11094",
-   "rank": 18,
-   "banner": "/banners/te-18.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-19",
-   "title": "SubmitAds4Free",
-   "url": "https://submitads4free.com/?rid=1840",
-   "rank": 19,
-   "banner": "/banners/te-19.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-20",
-   "title": "Rewards4Surfing",
-   "url": "https://rewards4surfing.com/?rid=14366",
-   "rank": 20,
-   "banner": "/banners/te-20.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-21",
-   "title": "ePayTraffic",
-   "url": "https://epaytraffic.com/?rid=2737",
-   "rank": 21,
-   "banner": "/banners/te-21.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-22",
-   "title": "TrafficSwap4U",
-   "url": "https://trafficswap4u.com/?rid=3879",
-   "rank": 22,
-   "banner": "/banners/te-22.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-23",
-   "title": "Angels Deliver Traffic",
-   "url": "https://angelsdelivertraffic.com/index.php?referrer=dannyiwakura",
-   "rank": 23,
-   "banner": "/banners/te-23.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-24",
-   "title": "Surf4Fun TE",
-   "url": "https://surf4funte.com/?rid=711",
-   "rank": 24,
-   "banner": "/banners/te-24.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-25",
-   "title": "Traffic Pirate Hits",
-   "url": "https://trafficpiratehits.com/?rid=4516",
-   "rank": 25,
-   "banner": "/banners/te-25.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-26",
-   "title": "Penguin Surfing",
-   "url": "https://penguinsurfing.com/?rid=1177",
-   "rank": 26,
-   "banner": "/banners/te-26.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-27",
-   "title": "ClearTraffic4U",
-   "url": "https://cleartraffic4u.com/?rid=1337",
-   "rank": 27,
-   "banner": "/banners/te-27.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-28",
-   "title": "ClickVoyager",
-   "url": "https://www.clickvoyager.com?id=DannyIwakura",
-   "rank": 28,
-   "banner": "/banners/te-28.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-29",
-   "title": "Treasure Traffic",
-   "url": "https://treasuretraffic.com/?rid=623",
-   "rank": 29,
-   "banner": "/banners/te-29.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-30",
-   "title": "Viral TE",
-   "url": "https://viral-te.club/?rid=52",
-   "rank": 30,
-   "banner": "/banners/te-30.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-31",
-   "title": "RocketHits4U",
-   "url": "https://rockethits4u.com/?rid=194",
-   "rank": 31,
-   "banner": "/banners/te-31.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-32",
-   "title": "GoldenHits4U",
-   "url": "https://goldenhits4u.com/?rid=313",
-   "rank": 32,
-   "banner": "/banners/te-32.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-33",
-   "title": "Custom Hits",
-   "url": "https://customhits.net/?ref=58237",
-   "rank": 33,
-   "banner": "/banners/te-33.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-34",
-   "title": "BusinessTraffic4U",
-   "url": "https://businesstraffic4u.com/?rid=315",
-   "rank": 34,
-   "banner": "/banners/te-34.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-35",
-   "title": "MegaHits4U",
-   "url": "https://megahits4u.com/?rid=205",
-   "rank": 35,
-   "banner": "/banners/te-35.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-36",
-   "title": "Ferry Hits",
-   "url": "https://ferryhits.com/?rid=368",
-   "rank": 36,
-   "banner": "/banners/te-36.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-37",
-   "title": "Sunrise TE",
-   "url": "https://sunrisete.net/?rid=14556",
-   "rank": 37,
-   "banner": "/banners/te-37.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-38",
-   "title": "Traffic Ad Bar",
-   "url": "https://trafficadbar.com/dannyiwakura",
-   "rank": 38,
-   "banner": "/banners/te-38.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-39",
-   "title": "Shruthi Hits",
-   "url": "https://shruthihits.com/?rid=1970",
-   "rank": 39,
-   "banner": "/banners/te-39.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-40",
-   "title": "Maga Traffic",
-   "url": "https://magatraffic.com?ref=5443",
-   "rank": 40,
-   "banner": "/banners/te-40.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-41",
-   "title": "TEHitz",
-   "url": "https://tehitz.com?ref=64026",
-   "rank": 41,
-   "banner": "/banners/te-41.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-42",
-   "title": "Zaney Clicks",
-   "url": "https://zaneyclicks.com/?rid=72812",
-   "rank": 42,
-   "banner": "/banners/te-42.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-43",
-   "title": "FoodGame",
-   "url": "https://foodgame.surf/?rid=4748",
-   "rank": 43,
-   "banner": "/banners/te-43.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-44",
-   "title": "Mousumi Traffic",
-   "url": "https://mousumitraffic.com/?rid=3492",
-   "rank": 44,
-   "banner": "/banners/te-44.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-45",
-   "title": "PlentyOfHits4U",
-   "url": "https://plentyofhits4u.com/?rid=470",
-   "rank": 45,
-   "banner": "/banners/te-45.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-46",
-   "title": "Fast N Furious Traffic",
-   "url": "https://fastnfurioustraffic.com/?rid=1436",
-   "rank": 46,
-   "banner": "/banners/te-46.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-47",
-   "title": "Lion Hits",
-   "url": "https://lionhits.com/?rid=1867",
-   "rank": 47,
-   "banner": "/banners/te-47.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-48",
-   "title": "Butterfly TE",
-   "url": "https://butterflyte.com/?rid=464",
-   "rank": 48,
-   "banner": "/banners/te-48.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-49",
-   "title": "Big Evs Traffic Exchange",
-   "url": "https://bigevstrafficexchange.com/?rid=726",
-   "rank": 49,
-   "banner": "/banners/te-49.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-50",
-   "title": "Magic of Traffic",
-   "url": "https://magicoftraffic.com/?rid=6586",
-   "rank": 50,
-   "banner": "/banners/te-50.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-51",
-   "title": "Traffic Speedway",
-   "url": "http://trafficspeedway.com/?rid=18865",
-   "rank": 51,
-   "banner": "/banners/te-51.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-52",
-   "title": "Hungry For Hits",
-   "url": "https://hungryforhits.com/?rid=18060",
-   "rank": 52,
-   "banner": "/banners/te-52.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-53",
-   "title": "Harvest Traffic",
-   "url": "https://harvesttraffic.com/?rid=4911",
-   "rank": 53,
-   "banner": "/banners/te-53.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-54",
-   "title": "Josh Hits",
-   "url": "https://joshhits.com/?rid=500",
-   "rank": 54,
-   "banner": "/banners/te-54.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-55",
-   "title": "Traffic Pi",
-   "url": "https://trafficpi.com/?rid=8603",
-   "rank": 55,
-   "banner": "/banners/te-55.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-56",
-   "title": "Hit Mart",
-   "url": "https://hit-mart.com/?rid=9728",
-   "rank": 56,
-   "banner": "/banners/te-56.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-57",
-   "title": "TESearch",
-   "url": "https://tesearch.com/?rid=12584",
-   "rank": 57,
-   "banner": "/banners/te-57.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-58",
-   "title": "Hot Flash Hits",
-   "url": "https://hotflashhits.com/?rid=13374",
-   "rank": 58,
-   "banner": "/banners/te-58.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-59",
-   "title": "Hip Hop With Traffic",
-   "url": "https://hiphopwithtraffic.com/?rid=1692",
-   "rank": 59,
-   "banner": "/banners/te-59.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-60",
-   "title": "Wizard TE",
-   "url": "https://wizardte.com/?rid=468",
-   "rank": 60,
-   "banner": "/banners/te-60.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-61",
-   "title": "Roadrunner TE",
-   "url": "https://roadrunnerte.com/?rid=556",
-   "rank": 61,
-   "banner": "/banners/te-61.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-62",
-   "title": "MyHits2U",
-   "url": "https://myhits2u.com/?rid=698",
-   "rank": 62,
-   "banner": "/banners/te-62.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-63",
-   "title": "Cyclone Hits",
-   "url": "https://cyclonehits.com/?rid=1058",
-   "rank": 63,
-   "banner": "/banners/te-63.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-64",
-   "title": "SurfBash",
-   "url": "https://surfbash.net/?rid=464",
-   "rank": 64,
-   "banner": "/banners/te-64.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-65",
-   "title": "Snowman Hits",
-   "url": "https://snowmanhits.com/?rid=242",
-   "rank": 65,
-   "banner": "/banners/te-65.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-66",
-   "title": "BasicHits4U",
-   "url": "https://basichits4u.com/supersplash.php?rid=1786",
-   "rank": 66,
-   "banner": "/banners/te-66.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-67",
-   "title": "Salty Life",
-   "url": "https://saltylife.click/?rid=94",
-   "rank": 67,
-   "banner": "/banners/te-67.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-68",
-   "title": "Teruthy Hits",
-   "url": "https://teruthyhits.com/?rid=199",
-   "rank": 68,
-   "banner": "/banners/te-68.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-69",
-   "title": "Viral TE Extreme",
-   "url": "https://viral-te-extreme.com/?rid=327",
-   "rank": 69,
-   "banner": "/banners/te-69.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-70",
-   "title": "Red Dragon Hits",
-   "url": "https://reddragonhits.com/?rid=22",
-   "rank": 70,
-   "banner": "/banners/te-70.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-71",
-   "title": "Mayan Warrior Hits",
-   "url": "https://mayanwarriorhits.com/?rid=62",
-   "rank": 71,
-   "banner": "/banners/te-71.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-72",
-   "title": "Residual Ad Network",
-   "url": "https://residualadnetwork.com/?rid=764",
-   "rank": 72,
-   "banner": "/banners/te-72.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-73",
-   "title": "Kingdom Hits",
-   "url": "https://kingdomhits.com/?rid=830",
-   "rank": 73,
-   "banner": "/banners/te-73.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-74",
-   "title": "Aries Hits",
-   "url": "https://aries-hits.com/?rid=681",
-   "rank": 74,
-   "banner": "/banners/te-74.jpg",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-75",
-   "title": "Gods of Traffic",
-   "url": "https://godsoftraffic.com/?rid=70",
-   "rank": 75,
-   "banner": "/banners/te-75.png",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "te-76",
-   "title": "Promo Power Team",
-   "url": "https://promopowerteam.com/?rid=115",
-   "rank": 76,
-   "banner": "/banners/te-76.gif",
-   "featured": false,
-   "listed": true
-  },
-  {
-   "id": "fe-01",
-   "title": "Traffic Crusader",
-   "url": "https://trafficcrusader.com/?rid=288",
-   "rank": 101,
-   "banner": "/banners/fe-01.webp",
-   "featured": true,
-   "listed": false
-  },
-  {
-   "id": "fe-02",
-   "title": "Steal Traffic",
-   "url": "https://steal-traffic.com/?rid=292",
-   "rank": 102,
-   "banner": "/banners/fe-02.gif",
-   "featured": true,
-   "listed": false
-  },
-  {
-   "id": "fe-03",
-   "title": "Azteca Traffic Power",
-   "url": "https://aztecatrafficpower.com/?rid=31",
-   "rank": 103,
-   "banner": "/banners/fe-03.png",
-   "featured": true,
-   "listed": false
-  },
-  {
-   "id": "fe-04",
-   "title": "Mysterious Scotland Traffic",
-   "url": "https://mysteriousscotlandtraffic.com/?rid=10630",
-   "rank": 104,
-   "banner": "/banners/fe-04.gif",
-   "featured": true,
-   "listed": false
-  },
-  {
-   "id": "fe-05",
-   "title": "Big Trucker TE",
-   "url": "https://bigtruckerte.com/?rid=393",
-   "rank": 105,
-   "banner": "/banners/fe-05.gif",
-   "featured": true,
-   "listed": false
-  },
-  {
-   "id": "fe-06",
-   "title": "Beautiencutie Hits",
-   "url": "https://beautiencutiehits.com/?rid=85",
-   "rank": 106,
-   "banner": "/banners/fe-06.gif",
-   "featured": true,
-   "listed": false
-  },
-  {
-   "id": "fe-07",
-   "title": "Traffic Reations",
-   "url": "https://trafficreations.com/?rid=142",
-   "rank": 107,
-   "banner": "/banners/fe-07.png",
-   "featured": true,
-   "listed": false
-  },
-  {
-   "id": "fe-08",
-   "title": "My Traffic Partners",
-   "url": "https://mytrafficpartners.com/index.php?r=dannyiwakura",
-   "rank": 108,
-   "banner": "/banners/fe-08.png",
-   "featured": true,
-   "listed": false
-  }
- ]
+  "tes": [
+    {
+      "id": "te-01",
+      "title": "EasyHits4U",
+      "url": "http://www.easyhits4u.com/?ref=neogeox",
+      "rank": 1,
+      "banner": "/banners/te-01.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-02",
+      "title": "The Downliner",
+      "url": "https://thedownliner.com/?r=31432",
+      "rank": 2,
+      "banner": "/banners/te-02.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-03",
+      "title": "Tweetyfied Surf",
+      "url": "https://tweetyfied-surf.com/supersplash.php?rid=4290",
+      "rank": 3,
+      "banner": "/banners/te-03.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-04",
+      "title": "Jungle Clicks Traffic",
+      "url": "https://jungleclickstraffic.com/?rid=1084",
+      "rank": 4,
+      "banner": "/banners/te-04.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-05",
+      "title": "Postman Hits",
+      "url": "https://postmanhits.com/?rid=5973",
+      "rank": 5,
+      "banner": "/banners/te-05.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-06",
+      "title": "TurboX Traffic",
+      "url": "https://turboxtraffic.com/rejestracja.php?id=1517",
+      "rank": 6,
+      "banner": "/banners/te-06.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-07",
+      "title": "Business Trafficy",
+      "url": "https://businesstrafficy.com?ref=494",
+      "rank": 7,
+      "banner": "/banners/te-07.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-08",
+      "title": "Finest Traffic",
+      "url": "https://finesttraffic.com/?rid=1761",
+      "rank": 8,
+      "banner": "/banners/te-08.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-09",
+      "title": "Vikings Hits",
+      "url": "https://vikingshits.com/?rid=790",
+      "rank": 9,
+      "banner": "/banners/te-09.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-10",
+      "title": "The Happy Pig Country",
+      "url": "https://thehappypigcountry.com/?rid=6459",
+      "rank": 10,
+      "banner": "/banners/te-10.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-11",
+      "title": "ActualHits4U",
+      "url": "https://actualhits4u.com/?rid=9583",
+      "rank": 11,
+      "banner": "/banners/te-11.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-12",
+      "title": "LeadsLeap",
+      "url": "https://leadsleap.com/?r=dannyiwakura",
+      "rank": 12,
+      "banner": "/banners/te-12.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-13",
+      "title": "Welthbilder Hits",
+      "url": "https://welthbilderhits.com/?rid=718",
+      "rank": 13,
+      "banner": "/banners/te-13.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-14",
+      "title": "TEHits4U",
+      "url": "https://tehits4u.com/?rid=545",
+      "rank": 14,
+      "banner": "/banners/te-14.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-15",
+      "title": "You2Surf",
+      "url": "https://you2surf.com/?rid=14452",
+      "rank": 15,
+      "banner": "/banners/te-15.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-16",
+      "title": "Surfing Champions",
+      "url": "https://surfingchampions.com/?rid=965",
+      "rank": 16,
+      "banner": "/banners/te-16.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-17",
+      "title": "6SecSurf",
+      "url": "https://6secsurf.club/?rid=2228",
+      "rank": 17,
+      "banner": "/banners/te-17.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-18",
+      "title": "QualityHits4U",
+      "url": "https://qualityhits4u.net/?rid=11094",
+      "rank": 18,
+      "banner": "/banners/te-18.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-19",
+      "title": "SubmitAds4Free",
+      "url": "https://submitads4free.com/?rid=1840",
+      "rank": 19,
+      "banner": "/banners/te-19.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-20",
+      "title": "Rewards4Surfing",
+      "url": "https://rewards4surfing.com/?rid=14366",
+      "rank": 20,
+      "banner": "/banners/te-20.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-21",
+      "title": "ePayTraffic",
+      "url": "https://epaytraffic.com/?rid=2737",
+      "rank": 21,
+      "banner": "/banners/te-21.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-22",
+      "title": "TrafficSwap4U",
+      "url": "https://trafficswap4u.com/?rid=3879",
+      "rank": 22,
+      "banner": "/banners/te-22.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-23",
+      "title": "Angels Deliver Traffic",
+      "url": "https://angelsdelivertraffic.com/index.php?referrer=dannyiwakura",
+      "rank": 23,
+      "banner": "/banners/te-23.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-24",
+      "title": "Surf4Fun TE",
+      "url": "https://surf4funte.com/?rid=711",
+      "rank": 24,
+      "banner": "/banners/te-24.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-25",
+      "title": "Traffic Pirate Hits",
+      "url": "https://trafficpiratehits.com/?rid=4516",
+      "rank": 25,
+      "banner": "/banners/te-25.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-26",
+      "title": "Penguin Surfing",
+      "url": "https://penguinsurfing.com/?rid=1177",
+      "rank": 26,
+      "banner": "/banners/te-26.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-27",
+      "title": "ClearTraffic4U",
+      "url": "https://cleartraffic4u.com/?rid=1337",
+      "rank": 27,
+      "banner": "/banners/te-27.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-28",
+      "title": "ClickVoyager",
+      "url": "https://www.clickvoyager.com?id=DannyIwakura",
+      "rank": 28,
+      "banner": "/banners/te-28.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-29",
+      "title": "Treasure Traffic",
+      "url": "https://treasuretraffic.com/?rid=623",
+      "rank": 29,
+      "banner": "/banners/te-29.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-30",
+      "title": "Viral TE",
+      "url": "https://viral-te.club/?rid=52",
+      "rank": 30,
+      "banner": "/banners/te-30.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-31",
+      "title": "RocketHits4U",
+      "url": "https://rockethits4u.com/?rid=194",
+      "rank": 31,
+      "banner": "/banners/te-31.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-32",
+      "title": "GoldenHits4U",
+      "url": "https://goldenhits4u.com/?rid=313",
+      "rank": 32,
+      "banner": "/banners/te-32.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-33",
+      "title": "Custom Hits",
+      "url": "https://customhits.net/?ref=58237",
+      "rank": 33,
+      "banner": "/banners/te-33.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-34",
+      "title": "BusinessTraffic4U",
+      "url": "https://businesstraffic4u.com/?rid=315",
+      "rank": 34,
+      "banner": "/banners/te-34.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-35",
+      "title": "MegaHits4U",
+      "url": "https://megahits4u.com/?rid=205",
+      "rank": 35,
+      "banner": "/banners/te-35.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-36",
+      "title": "Ferry Hits",
+      "url": "https://ferryhits.com/?rid=368",
+      "rank": 36,
+      "banner": "/banners/te-36.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-37",
+      "title": "Sunrise TE",
+      "url": "https://sunrisete.net/?rid=14556",
+      "rank": 37,
+      "banner": "/banners/te-37.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-38",
+      "title": "Traffic Ad Bar",
+      "url": "https://trafficadbar.com/dannyiwakura",
+      "rank": 38,
+      "banner": "/banners/te-38.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-39",
+      "title": "Shruthi Hits",
+      "url": "https://shruthihits.com/?rid=1970",
+      "rank": 39,
+      "banner": "/banners/te-39.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-40",
+      "title": "Maga Traffic",
+      "url": "https://magatraffic.com?ref=5443",
+      "rank": 40,
+      "banner": "/banners/te-40.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-41",
+      "title": "TEHitz",
+      "url": "https://tehitz.com?ref=64026",
+      "rank": 41,
+      "banner": "/banners/te-41.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-42",
+      "title": "Zaney Clicks",
+      "url": "https://zaneyclicks.com/?rid=72812",
+      "rank": 42,
+      "banner": "/banners/te-42.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-43",
+      "title": "FoodGame",
+      "url": "https://foodgame.surf/?rid=4748",
+      "rank": 43,
+      "banner": "/banners/te-43.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-44",
+      "title": "Mousumi Traffic",
+      "url": "https://mousumitraffic.com/?rid=3492",
+      "rank": 44,
+      "banner": "/banners/te-44.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-45",
+      "title": "PlentyOfHits4U",
+      "url": "https://plentyofhits4u.com/?rid=470",
+      "rank": 45,
+      "banner": "/banners/te-45.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-46",
+      "title": "Fast N Furious Traffic",
+      "url": "https://fastnfurioustraffic.com/?rid=1436",
+      "rank": 46,
+      "banner": "/banners/te-46.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-47",
+      "title": "Lion Hits",
+      "url": "https://lionhits.com/?rid=1867",
+      "rank": 47,
+      "banner": "/banners/te-47.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-48",
+      "title": "Butterfly TE",
+      "url": "https://butterflyte.com/?rid=464",
+      "rank": 48,
+      "banner": "/banners/te-48.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-49",
+      "title": "Big Evs Traffic Exchange",
+      "url": "https://bigevstrafficexchange.com/?rid=726",
+      "rank": 49,
+      "banner": "/banners/te-49.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-50",
+      "title": "Magic of Traffic",
+      "url": "https://magicoftraffic.com/?rid=6586",
+      "rank": 50,
+      "banner": "/banners/te-50.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-51",
+      "title": "Traffic Speedway",
+      "url": "http://trafficspeedway.com/?rid=18865",
+      "rank": 51,
+      "banner": "/banners/te-51.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-52",
+      "title": "Hungry For Hits",
+      "url": "https://hungryforhits.com/?rid=18060",
+      "rank": 52,
+      "banner": "/banners/te-52.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-53",
+      "title": "Harvest Traffic",
+      "url": "https://harvesttraffic.com/?rid=4911",
+      "rank": 53,
+      "banner": "/banners/te-53.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-54",
+      "title": "Josh Hits",
+      "url": "https://joshhits.com/?rid=500",
+      "rank": 54,
+      "banner": "/banners/te-54.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-55",
+      "title": "Traffic Pi",
+      "url": "https://trafficpi.com/?rid=8603",
+      "rank": 55,
+      "banner": "/banners/te-55.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-56",
+      "title": "Hit Mart",
+      "url": "https://hit-mart.com/?rid=9728",
+      "rank": 56,
+      "banner": "/banners/te-56.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-57",
+      "title": "TESearch",
+      "url": "https://tesearch.com/?rid=12584",
+      "rank": 57,
+      "banner": "/banners/te-57.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-58",
+      "title": "Hot Flash Hits",
+      "url": "https://hotflashhits.com/?rid=13374",
+      "rank": 58,
+      "banner": "/banners/te-58.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-59",
+      "title": "Hip Hop With Traffic",
+      "url": "https://hiphopwithtraffic.com/?rid=1692",
+      "rank": 59,
+      "banner": "/banners/te-59.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-60",
+      "title": "Wizard TE",
+      "url": "https://wizardte.com/?rid=468",
+      "rank": 60,
+      "banner": "/banners/te-60.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-61",
+      "title": "Roadrunner TE",
+      "url": "https://roadrunnerte.com/?rid=556",
+      "rank": 61,
+      "banner": "/banners/te-61.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-62",
+      "title": "MyHits2U",
+      "url": "https://myhits2u.com/?rid=698",
+      "rank": 62,
+      "banner": "/banners/te-62.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-63",
+      "title": "Cyclone Hits",
+      "url": "https://cyclonehits.com/?rid=1058",
+      "rank": 63,
+      "banner": "/banners/te-63.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-64",
+      "title": "SurfBash",
+      "url": "https://surfbash.net/?rid=464",
+      "rank": 64,
+      "banner": "/banners/te-64.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-65",
+      "title": "Snowman Hits",
+      "url": "https://snowmanhits.com/?rid=242",
+      "rank": 65,
+      "banner": "/banners/te-65.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-66",
+      "title": "BasicHits4U",
+      "url": "https://basichits4u.com/supersplash.php?rid=1786",
+      "rank": 66,
+      "banner": "/banners/te-66.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-67",
+      "title": "Salty Life",
+      "url": "https://saltylife.click/?rid=94",
+      "rank": 67,
+      "banner": "/banners/te-67.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-68",
+      "title": "Teruthy Hits",
+      "url": "https://teruthyhits.com/?rid=199",
+      "rank": 68,
+      "banner": "/banners/te-68.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-69",
+      "title": "Viral TE Extreme",
+      "url": "https://viral-te-extreme.com/?rid=327",
+      "rank": 69,
+      "banner": "/banners/te-69.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-70",
+      "title": "Red Dragon Hits",
+      "url": "https://reddragonhits.com/?rid=22",
+      "rank": 70,
+      "banner": "/banners/te-70.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-71",
+      "title": "Mayan Warrior Hits",
+      "url": "https://mayanwarriorhits.com/?rid=62",
+      "rank": 71,
+      "banner": "/banners/te-71.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-72",
+      "title": "Residual Ad Network",
+      "url": "https://residualadnetwork.com/?rid=764",
+      "rank": 72,
+      "banner": "/banners/te-72.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-73",
+      "title": "Kingdom Hits",
+      "url": "https://kingdomhits.com/?rid=830",
+      "rank": 73,
+      "banner": "/banners/te-73.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-74",
+      "title": "Aries Hits",
+      "url": "https://aries-hits.com/?rid=681",
+      "rank": 74,
+      "banner": "/banners/te-74.jpg",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-75",
+      "title": "Gods of Traffic",
+      "url": "https://godsoftraffic.com/?rid=70",
+      "rank": 75,
+      "banner": "/banners/te-75.png",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "te-76",
+      "title": "Promo Power Team",
+      "url": "https://promopowerteam.com/?rid=115",
+      "rank": 76,
+      "banner": "/banners/te-76.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "fe-01",
+      "title": "Traffic Crusader",
+      "url": "https://trafficcrusader.com/?rid=288",
+      "rank": 101,
+      "banner": "/banners/fe-01.webp",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "fe-02",
+      "title": "Steal Traffic",
+      "url": "https://steal-traffic.com/?rid=292",
+      "rank": 102,
+      "banner": "/banners/fe-02.gif",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "fe-03",
+      "title": "Azteca Traffic Power",
+      "url": "https://aztecatrafficpower.com/?rid=31",
+      "rank": 103,
+      "banner": "/banners/fe-03.png",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "fe-04",
+      "title": "Mysterious Scotland Traffic",
+      "url": "https://mysteriousscotlandtraffic.com/?rid=10630",
+      "rank": 104,
+      "banner": "/banners/fe-04.gif",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "fe-05",
+      "title": "Big Trucker TE",
+      "url": "https://bigtruckerte.com/?rid=393",
+      "rank": 105,
+      "banner": "/banners/fe-05.gif",
+      "featured": false,
+      "listed": true
+    },
+    {
+      "id": "fe-06",
+      "title": "Beautiencutie Hits",
+      "url": "https://beautiencutiehits.com/?rid=85",
+      "rank": 106,
+      "banner": "/banners/fe-06.gif",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "fe-07",
+      "title": "Traffic Reations",
+      "url": "https://trafficreations.com/?rid=142",
+      "rank": 107,
+      "banner": "/banners/fe-07.png",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "fe-08",
+      "title": "My Traffic Partners",
+      "url": "https://mytrafficpartners.com/index.php?r=dannyiwakura",
+      "rank": 108,
+      "banner": "/banners/fe-08.png",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "te-77",
+      "title": "SaclelUp",
+      "url": "https://scalelup.com/promo-one?r=lEjX6Osd26",
+      "rank": 77,
+      "banner": "/banners/Captura de pantalla 2026-11-05 113504.png",
+      "featured": true,
+      "listed": false
+    }
+  ]
 }
