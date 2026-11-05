@@ -191,16 +191,32 @@ Si cambia el repo o se usa dominio propio: `BASE_PATH` en `src/lib/site.js` (`'/
 
 ---
 
-## 7. Iframe en el sitio Wix viejo (fase posterior)
+## 7. Iframe en el sitio Wix viejo (fase posterior, requiere decisión)
 
-- Repo clonado en `E:\MArketing Viral\wixsites\dannyiwakura` (Wix CLI / Velo, `uiVersion: "118"`).
-- `src/pages/*.js` son stubs; el diseño real vive en el editor, así que el iframe va en
-  `src/public/embed.js` + CSS, publicado con `wix site publish` (flow `site` = `cli-site-old`).
-- Mapeo de rutas: `/blank` → `/`, `/blank-1` → `/all-tes`, `/blank-2` → `/top-10`.
-- **Solo publicar con aprobación explícita del usuario.**
-- El flow `site` no está registrado en la CLI 1.2.8 (`npx wix --help` solo muestra `origami`);
-  hay que apuntar el flow global `site` a `src-2KWKO27P.js` de `@wix/cli-site-old`
-  (parche temporal de `FLOWS_REGISTRY` en `node_modules/@wix/cli/build/index.js`, restaurar después).
+**Hallazgo importante:** en el repo Velo (`E:\MArketing Viral\wixsites\dannyiwakura`),
+`src/public/` **no** son ficheros estáticos servidos en el dominio del sitio: son módulos
+JS que se importan desde el código de las páginas (`import { x } from 'public/x'`). Por eso
+no se puede añadir un `embed.js` que se ejecute solo: Wix no lo sirve como asset público.
+
+Las páginas son stubs (`src/pages/HOME.bozxl.js`, `ALL TEs.uf9h2.js`, `TOP 10.jihu9.js`,
+`masterPage.js`), con el diseño real en el editor. Opciones:
+
+| Opción | Cómo | Pros | Contras |
+|---|---|---|---|
+| **A. Editor de Wix (recomendada)** | En cada página: *Add → Embed → Embed a site* → `https://dannyiwakura.github.io/marketing-viral/`, estirar a pantalla completa, *Send to back*, ocultar cabecera/pie y publicar | La barra de direcciones sigue en `neogamesforo.wixsite.com/dannyiwakura`; 10 min por página | Manual, en el editor |
+| **B. Solo código** | `src/backend/http-functions.js` que devuelva HTML con el iframe + redirección desde las páginas a `/_functions/embed` | 100 % por CLI, sin tocar el editor | La URL pasa a `.../dannyiwakura/_functions/embed`; hay que registrar el flow `site` (cli-site-old) y **publicar** |
+| **C. No tocar nada** | El sitio viejo sigue online con su diseño antiguo | Cero riesgo | Diseño viejo y enlaces duplicados |
+
+Recomendación: **A** si se quiere conservar exactamente la URL; **C** si lo único que
+importa es que la URL siga viva (ya lo está).
+
+Notas para la opción B: el flow `site` no está registrado en la CLI 1.2.8 (`npx wix --help`
+solo muestra `origami`); hay que apuntar el flow global `site` a `src-2KWKO27P.js` de
+`@wix/cli-site-old` (parche temporal de `FLOWS_REGISTRY` en
+`node_modules/@wix/cli/build/index.js`, restaurar después). Mapeo de rutas del sitio viejo:
+`/blank` = HOME, `/blank-1` = ALL TEs, `/blank-2` = TOP 10.
+
+**Solo publicar en Wix con aprobación explícita del usuario.**
 
 ---
 

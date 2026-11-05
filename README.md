@@ -115,19 +115,24 @@ El panel `/admin` del sitio publicado ya carga, pero para entrar necesita una
 
 ---
 
-## Iframe en el sitio Wix viejo
+## Iframe en el sitio Wix viejo (pendiente de decisión)
 
-El sitio `https://neogamesforo.wixsite.com/dannyiwakura` se mantiene online y mostrará un
-iframe del sitio nuevo para que los exchanges no protesten por la URL:
+El sitio `https://neogamesforo.wixsite.com/dannyiwakura` sigue online (comprobado, HTTP 200)
+y su URL no se pierde. Para que además muestre el sitio nuevo dentro, hay tres caminos
+(detalle en `DESIGN-NOTES.md` §7):
 
-- `/blank` → `/`
-- `/blank-1` → `/all-tes`
-- `/blank-2` → `/top-10`
+- **A. Editor de Wix (recomendada):** *Add → Embed → Embed a site* →
+  `https://dannyiwakura.github.io/marketing-viral/`, a pantalla completa y publicar.
+  Conserva la barra de direcciones en el dominio de Wix.
+- **B. Solo código:** función HTTP de Velo que devuelve el iframe (la URL pasa a
+  `.../_functions/embed`) — requiere publicar en Wix.
+- **C. No tocar nada:** la URL vieja sigue viva con el diseño antiguo.
+
+> En el repo Velo, `src/public/` son módulos importables, **no** ficheros estáticos
+> públicos: por eso un `embed.js` suelto no se ejecuta solo.
 
 Los banners usan `target="_top"` + `rel="noreferrer"`: la visita al exchange es una
 navegación normal a pantalla completa y no se filtra el dominio del sitio nuevo.
-
-Detalle de la implementación: `DESIGN-NOTES.md` (§7).
 
 ## Licencia / notas
 
