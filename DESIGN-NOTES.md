@@ -120,7 +120,9 @@ panel desplegable con los items en mayúsculas sobre fondo `base-1` y borde `sha
    - Lead: P1, `shade-3`, margen inferior 36 u.
 2. Banda `featured` (fondo `shade-1`): eyebrow "Featured this month" (P3 accent-3, ls 0.14em),
    H2 "Eight exchanges to start with" (70 % de ancho), lead P2 (52 % de ancho),
-   rejilla con las 8 fichas destacadas.
+   rejilla con las 8 fichas destacadas y, debajo, un botón pill "View the complete list"
+   (`Link` a `/all-tes`, el mismo `.button` del hero, centrado con `.section-cta`:
+   margen superior 48 u / 40 u en móvil).
 3. "How it works": eyebrow, H2 "Three steps, no cost to start", 3 tarjetas de paso
    (01 Pick an exchange / 02 Register for free / 03 Turn credits into visits) y botón CTA.
 

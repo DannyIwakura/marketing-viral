@@ -80,6 +80,12 @@ export default function Home() {
                             <TeCard key={te.id || te.url} te={te} />
                         ))}
                     </div>
+
+                    <div className="section-cta">
+                        <Link className="button" to="/all-tes">
+                            View the complete list
+                        </Link>
+                    </div>
                 </div>
             </section>
 
