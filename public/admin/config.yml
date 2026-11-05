@@ -1,34 +1,29 @@
 # ---------------------------------------------------------------------------
-# Decap CMS - configuracion del panel de contenido de Marketing Viral.
+# Decap CMS - panel de contenido de Marketing Viral.
 #
-# EDICION LOCAL (sin OAuth, gratis, inmediato):
-#   1) npm run cms            (o: npx decap-server)
-#   2) abre http://localhost:8080/admin/
-#   3) guarda -> commit en la rama main -> push -> GitHub Pages redespliega
+# EDICION LOCAL (gratis, sin OAuth, funciona hoy):
+#   1) npm run cms            (npx decap-server, escucha en el puerto 8081)
+#   2) abre http://localhost:8081/admin/  (o el /admin/ del sitio en el 5173)
+#   3) guarda -> Decap escribe public/data/tes.json -> git add/commit/push
+#   4) GitHub Pages redespliega solo.
 #
-# EDICION ONLINE (en el /admin publicado) - requiere dos pasos del usuario:
-#   1) Crear una GitHub OAuth App:
-#        Homepage URL:        https://dannyiwakura.github.io/marketing-viral/
-#        Callback URL:        https://dannyiwakura.github.io/marketing-viral/admin/
-#      -> copiar el Client ID.
-#   2) Desplegar un proxy OAuth gratuito para Decap (Netlify/Vercel free) y poner
-#      su URL en base_url. Ese proxy es el que intercambia el codigo por el token.
-#      Documentacion: https://decapcms.org/docs/github-backend/
-#      -> poner client_id y base_url, y poner local_backend: false.
-#
-# Nota: si el repositorio o el dominio cambian, actualizar tambien
-#       site_url / display_url / base_url y BASE_PATH en src/lib/site.js.
+# EDICION ONLINE (en /admin del sitio publicado): requiere dos cosas del usuario
+#   1) GitHub OAuth App
+#        Homepage URL:  https://dannyiwakura.github.io/marketing-viral/
+#        Callback URL:  https://dannyiwakura.github.io/marketing-viral/admin/
+#   2) Un proxy OAuth gratuito (Netlify / Vercel / Cloudflare Worker) que
+#      intercambie el codigo por el token. Ver:
+#      https://decapcms.org/docs/github-backend/
+#   Luego: descomentar base_url + client_id y poner local_backend: false.
 # ---------------------------------------------------------------------------
 
 backend:
   name: github
   repo: DannyIwakura/marketing-viral
   branch: main
-  # base_url: https://TU-OAUTH-PROXY.netlify.app
+  # base_url: https://TU-PROXY-OAUTH.netlify.app
   # client_id: TU_CLIENT_ID
 
-# Editar en local con `npx decap-server` sin necesidad de OAuth.
-# Poner en `false` cuando se configure el proxy OAuth para el panel online.
 local_backend: true
 
 media_folder: public/banners
@@ -44,44 +39,58 @@ slug:
   sanitize_replacement: "-"
 
 collections:
-  - name: tes
-    label: Traffic Exchanges
-    label_singular: Traffic Exchange
-    description: 'Las fichas del directorio. "Aparece en el directorio" = true las lista en ALL TEs; los destacados de portada se marcan con "Destacado en portada".'
-    file: public/data/tes.json
-    format: json
-    identifier_field: id
-    summary: '{{title}}'
-    sortable_fields: [rank, title]
-    fields:
-      - label: Nombre
-        name: title
-        widget: string
-        hint: 'Nombre del exchange, p. ej. EasyHits4U'
-      - label: URL de referido
-        name: url
-        widget: string
-        hint: 'Link completo con el identificante de referido, p. ej. https://ejemplo.com/?rid=123'
-      - label: Posición en el directorio
-        name: rank
-        widget: number
-        value_type: int
-        min: 1
-        required: false
-        hint: 'Orden en ALL TEs. Los 10 primeros forman el TOP 10.'
-      - label: Banner
-        name: banner
-        widget: image
-        choose_url: false
-        required: false
-        hint: 'Banner del exchange (468x60 px recomendado).'
-      - label: Destacado en la portada
-        name: featured
-        widget: boolean
-        default: false
-        hint: 'Aparece en la portada (se muestran los 8 primeros destacados).'
-      - label: Aparece en el directorio (ALL TEs)
-        name: listed
-        widget: boolean
-        default: true
-        hint: 'Desmarcalo si la ficha es solo un destacado de portada.'
+  - name: directorio
+    label: Directorio
+    description: >-
+      Las fichas de Traffic Exchanges. Los campos de cada ficha controlan donde
+      aparece: "Destacado en portada" la lleva a la portada (se muestran 8) y
+      "Aparece en el directorio" la lista en ALL TEs.
+    files:
+      - name: tes
+        label: Traffic Exchanges
+        file: public/data/tes.json
+        format: json
+        fields:
+          - label: Fichas
+            name: tes
+            widget: list
+            label_singular: Traffic Exchange
+            summary: "{{fields.title}}"
+            collapsed: true
+            fields:
+              - label: ID
+                name: id
+                widget: string
+                required: false
+                hint: "Identificador unico (te-77, fe-09, ...). No se muestra en la web."
+              - label: Nombre
+                name: title
+                widget: string
+                hint: "Nombre del exchange, p. ej. EasyHits4U"
+              - label: URL de referido
+                name: url
+                widget: string
+                hint: "Link completo con tu identificador de referido."
+              - label: Posicion en el directorio
+                name: rank
+                widget: number
+                value_type: int
+                min: 1
+                required: false
+                hint: "Orden en ALL TEs. Los 10 primeros forman el TOP 10."
+              - label: Banner
+                name: banner
+                widget: image
+                choose_url: false
+                required: false
+                hint: "Banner del exchange (468x60 px recomendado)."
+              - label: Destacado en portada
+                name: featured
+                widget: boolean
+                default: false
+                hint: "La portada muestra los 8 primeros destacados."
+              - label: Aparece en el directorio
+                name: listed
+                widget: boolean
+                default: true
+                hint: "Desmarcalo solo si la ficha es un destacado heredado de la portada antigua."
