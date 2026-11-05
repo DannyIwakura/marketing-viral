@@ -15,17 +15,18 @@ simple `git push`.
 |---|---|
 | `src/pages/` | `Home`, `AllTes`, `Top10` |
 | `src/components/` | `Header`, `Footer`, `TeCard`, `Seo` |
+| `src/lib/analytics.js` | Envío de eventos a Umami (clics en banners) |
 | `src/styles/theme.css` | Tokens de marca y escala del diseño |
 | `src/styles/app.css` | Layout completo (responsive) |
-| `public/data/tes.json` | **El contenido**: 84 fichas (76 del directorio + 8 destacados) |
+| `public/data/tes.json` | **El contenido**: las fichas del directorio y las destacadas |
 | `public/banners/` | 84 banners de los exchanges (468×60) |
 | `public/admin/` | Panel Decap CMS (`/admin`) |
 | `.pages.yml` | Panel Pages CMS (online, sin OAuth) |
 | `design-reference/` | Capturas y mediciones del diseño original (referencia) |
 | `DESIGN-NOTES.md` | Especificación de diseño y estado del proyecto |
 
-El sitio es **data-driven**: los contadores ("84 traffic exchanges", "All 76 traffic exchanges",
-"Top 10"), los listados y la portada se calculan a partir de `public/data/tes.json`. No hay
+El sitio es **data-driven**: los contadores ("All 76 traffic exchanges", "Top 10"), los
+listados y la portada se calculan a partir de `public/data/tes.json`. No hay
 ninguna cifra escrita a mano: si añades o quitas fichas en el CMS, los números cambian solos.
 
 ### Modelo de datos
@@ -42,7 +43,7 @@ ninguna cifra escrita a mano: si añades o quitas fichas en el CMS, los números
 }
 ```
 
-- **ALL TEs** = todas las fichas con `listed: true` (76), ordenadas por `rank`.
+- **ALL TEs** = todas las fichas con `listed: true`, ordenadas por `rank`.
 - **TOP 10** = las 10 primeras por `rank`.
 - **Portada** = hasta 8 fichas con `featured: true`.
 
@@ -76,6 +77,47 @@ publica el sitio en ~1 minuto.
 Si algún día cambia el nombre del repo o se usa un dominio propio, actualiza `BASE_PATH` en
 `src/lib/site.js` (`'/marketing-viral/'` → `'/'`) y `site_url` en `public/admin/config.yml`.
 
+## Estadísticas de visitas
+
+El sitio mide las visitas con **Umami Cloud** (plan gratuito): sin cookies, sin datos
+personales y sin banner de consentimiento.
+
+| | |
+|---|---|
+| Panel | https://cloud.umami.is → web "Marketing Viral" |
+| Web registrada | `dannyiwakura.github.io` |
+| UUID del sitio | en `index.html` (`data-website-id`) — es público |
+| Lo que cuenta | páginas vistas, visitas, rutas, países, dispositivos y navegador |
+| Eventos | `Banner click` con propiedades `te`, `title`, `from`, `slot` |
+
+**Clics en banners:** cada clic en un banner o en su enlace "Visit site" genera un evento
+`Banner click` con el `id` y el título del exchange, la ruta desde la que se pulsó
+(`/`, `/all-tes`, `/top-10`) y el tipo de enlace (`banner` o `link`). En el panel:
+*Events → Banner click → Properties*. Con eso se puede crear un *goal* de tipo evento para
+ver el porcentaje de visitas que acaba pulsando un banner.
+
+**Limitaciones (importantes):**
+
+- El sitio se sirve dentro de un iframe de Wix, así que **todos los referrers se ven como
+  `wixsite.com`**. Para saber de dónde viene la gente (qué exchange, foro o red) hay que
+  mirar el **Analytics de Wix**, que es gratis y sí ve la página de entrada real.
+- Los bloqueadores de anuncios cortan el script: las cifras son un **mínimo**, no un censo.
+- El plan gratuito guarda **6 meses** de histórico y admite 100.000 eventos al mes. Exporta
+  en CSV si quieres conservar los datos.
+- En el plan gratuito no hay filtros de IP, así que tus propias visitas cuentan. Ábrelo una
+  vez con `?notrack=1` para dejar de contarlas en tu navegador:
+  `https://dannyiwakura.github.io/marketing-viral/?notrack=1` (`?track=1` lo revierte).
+- El UUID es público (va en el HTML): alguien podría enviar visitas falsas. Es una
+  molestia, no un riesgo.
+
+**Dónde tocarlo:**
+
+- Script y UUID: `index.html` (cabecera `<head>`).
+- Eventos: `src/components/TeCard.jsx` (llama a `src/lib/analytics.js`).
+- `data-domains` deja fuera el preview local: las visitas de `127.0.0.1` no se cuentan.
+
+---
+
 ## Editar el contenido
 
 Hay tres formas, de la más cómoda a la más técnica.
@@ -84,7 +126,7 @@ Hay tres formas, de la más cómoda a la más técnica.
 
 1. Entra en **https://app.pagescms.org** y accede con GitHub.
 2. Instala la GitHub App **Pages CMS** solo en el repo `DannyIwakura/marketing-viral`.
-3. Abre el repositorio: verás la colección **Traffic Exchanges** con las 84 fichas.
+3. Abre el repositorio: verás la colección **Traffic Exchanges** con todas las fichas.
    Puedes añadir una ficha nueva, subir el banner, marcar *Destacado en portada* (máx. 8)
    y guardar. El cambio se commitea y la web se actualiza sola.
 

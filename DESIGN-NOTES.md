@@ -35,6 +35,7 @@ no se quejen de la URL.
 | Repositorio git local con commit inicial | ✅ |
 | **Publicado en GitHub Pages** | ✅ https://dannyiwakura.github.io/marketing-viral/ |
 | Palabra rotativa en el H1 del HOME | ✅ `src/components/RotatingWord.jsx` (ver §3.6) |
+| Analítica de visitas (Umami Cloud + clics en banners) | ✅ `index.html`, `src/lib/analytics.js`, `src/components/TeCard.jsx` (ver §10) |
 | Iframe en el repo Velo viejo (`dannyiwakura/src/public/embed.js`) | ✅ colocado por el usuario en Wix |
 
 Referencias guardadas en `design-reference/`:
@@ -272,3 +273,31 @@ cd "C:\Users\PC\AppData\Local\Temp\opencode"; node build-content.mjs
   `title`, `link`, `rank`, `banner`). El sitio viejo **no tiene CMS**: sus fichas están fijas en el editor.
 - La portada del sitio viejo tenía 10 exchanges y el TOP 10 estaba vacío ("Our top 10 will be available soon..").
 - Banners servidos por `https://static.wixstatic.com/media/<mediaId>`.
+
+---
+
+## 10. Analítica de visitas (Umami Cloud) — hecho
+
+Implementado el 2026-11-05. Herramienta: **Umami Cloud**, plan Hobby gratuito (100.000
+eventos/mes, 1 web, 6 meses de histórico). Sin cookies, sin datos personales y sin banner
+de consentimiento.
+
+| Pieza | Dónde | Qué hace |
+|---|---|---|
+| `data-website-id` + script | `index.html` (`<head>`) | tracker `https://cloud.umami.is/script.js` |
+| `data-domains="dannyiwakura.github.io"` | `index.html` | el preview local (`127.0.0.1`) no cuenta visitas |
+| `data-do-not-track="true"` | `index.html` | respeta la señal DNT del navegador |
+| `window.mvBeforeSend` | `index.html` | (1) `?notrack=1` / `?track=1` excluye tus visitas; (2) quita la barra final de la URL para que `/all-tes` y `/all-tes/` no cuenten como dos páginas |
+| `trackEvent()` | `src/lib/analytics.js` | envoltura segura: si el tracker no cargó (adblock), no hace nada y el clic sigue igual |
+| `onClick` en los enlaces | `src/components/TeCard.jsx` | evento `Banner click` con `te`, `title`, `from` y `slot` |
+
+El evento se dispara **antes** de abrir la pestaña nueva (`target="_blank"`), sin
+`preventDefault` ni esperas: el enlace se comporta exactamente igual que antes.
+
+Umami detecta solo los cambios de ruta de la SPA, así que no hay que programar las páginas
+vistas: Home → All TEs → Top 10 se contabilizan sin tocar nada.
+
+**Limitación estructural:** el sitio vive dentro de un iframe de Wix (`sandbox` con
+`allow-scripts allow-same-origin`), así que `document.referrer` dentro del iframe es siempre
+`https://neogamesforo.wixsite.com/`. Los referrers reales solo se ven en el Analytics de Wix
+(gratis). Los bloqueadores de anuncios hacen que las cifras sean un mínimo, no un censo.

@@ -23,6 +23,49 @@
             content="https://dannyiwakura.github.io/marketing-viral/logo.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- ------------------------------------------------------------------
+             Analitica: Umami Cloud (sin cookies, sin datos personales).
+             El UUID es publico: va en el HTML de todas formas.
+
+             ?notrack=1  deja de contar TUS visitas en este navegador
+             ?track=1    vuelve a contarlas. Solo afecta a tu navegador.
+
+             data-domains evita que el preview local (127.0.0.1) cuente.
+        ------------------------------------------------------------------ -->
+        <script>
+            ;(function () {
+                try {
+                    var q = new URLSearchParams(window.location.search)
+                    if (q.get('notrack') === '1') localStorage.setItem('mv-notrack', '1')
+                    if (q.get('track') === '1') localStorage.removeItem('mv-notrack')
+                } catch (e) {
+                    /* sin localStorage la analitica sigue funcionando */
+                }
+            })()
+            // Umami llama a esto antes de cada envio; devolver el payload lo permite.
+            window.mvBeforeSend = function (type, payload) {
+                try {
+                    if (localStorage.getItem('mv-notrack') === '1') return false
+                } catch (e) {
+                    /* si no se puede leer, se envia */
+                }
+                // Quita la barra final para que /all-tes y /all-tes/ no cuenten
+                // como dos paginas distintas en el panel.
+                if (payload && typeof payload.url === 'string') {
+                    payload = Object.assign({}, payload, { url: payload.url.replace(/\/+$/, '') || payload.url })
+                }
+                return payload
+            }
+        </script>
+        <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="4c586268-f7c1-4f70-a7ab-247b3cf88a70"
+            data-domains="dannyiwakura.github.io"
+            data-before-send="mvBeforeSend"
+            data-do-not-track="true"
+        ></script>
     </head>
     <body>
         <div id="root"></div>
