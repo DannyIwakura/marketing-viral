@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
 import Seo from '../components/Seo'
+import RotatingWord from '../components/RotatingWord'
 import TeCard from '../components/TeCard'
 import { selectContent, useContent } from '../lib/content'
+
+// Palabras que rotan en el titular del hero.
+const ROTATING_WORDS = ['offers', 'services', 'products', 'referrals', 'blog', 'website']
 
 const STEPS = [
     {
@@ -38,7 +42,18 @@ export default function Home() {
             <section className="section hero">
                 <div className="container hero-inner">
                     <p className="badge">{total || 76} traffic exchanges · hand-picked</p>
-                    <h1 className="hero-title">Real traffic for your offers, from one place.</h1>
+                    <h1 className="hero-title">
+                        <span className="sr-only">
+                            Real traffic for your offers, services, products, referrals, blog and website, from one place.
+                        </span>
+                        <span aria-hidden="true">
+                            Real traffic for your{' '}
+                            <br className="hero-break" />
+                            <RotatingWord words={ROTATING_WORDS} interval={2000} suffix="," />{' '}
+                            <br className="hero-break-tail" />
+                            from one place.
+                        </span>
+                    </h1>
                     <p className="hero-lead">
                         A hand-picked directory of the traffic exchanges I use every day. Pick one, register free, and start
                         sending real visitors to your pages.

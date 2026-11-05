@@ -145,6 +145,102 @@
     color: var(--base-2);
 }
 
+/* El titular rompe siempre despues de "your": la palabra que rota cambia de
+   ancho y, sin una rotura fija, el salto de linea bailaria de una palabra a
+   otra en cada vuelta. */
+.hero-break {
+    display: inline;
+}
+
+/* En movil y tableta "palabra, from one place." no cabe en un renglon, asi que
+   la cola baja siempre: asi todas las palabras ocupan las mismas lineas. */
+.hero-break-tail {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .hero-break-tail {
+        display: inline;
+    }
+}
+
+/* Palabra que rota en el hero.
+   inline-grid (no inline-block) para que la linea base del texto coincida con
+   la del resto del titular: con overflow:hidden en el hijo, un inline-block
+   alinearia su borde inferior con la linea base y agrandaria el renglon. */
+.rotator {
+    display: inline-grid;
+    color: var(--accent-3);
+}
+
+/* Copia invisible de todas las palabras: solo sirve para medir anchos. */
+.rotator-measure {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.rotator-window {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: width 420ms cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+
+.rotator-word {
+    display: block;
+    white-space: nowrap;
+}
+
+.rotator-word--in {
+    animation: rotator-in 420ms cubic-bezier(0.2, 0.65, 0.3, 1) both;
+}
+
+.rotator-word--out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotator-out 340ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes rotator-in {
+    from {
+        opacity: 0;
+        transform: translateY(0.4em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotator-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-0.4em);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .rotator-window {
+        transition: none;
+    }
+
+    .rotator-word--in,
+    .rotator-word--out {
+        animation: none;
+    }
+
+    .rotator-word--out {
+        display: none;
+    }
+}
+
 .hero-lead {
     width: 58%;
     margin-top: calc(var(--u) * var(--sp-title-lead));
