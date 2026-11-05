@@ -32,14 +32,12 @@ backend:
 local_backend: true
 
 media_folder: public/banners
-media_folder_static: public/banners
 public_folder: /banners
 
 site_url: https://dannyiwakura.github.io/marketing-viral
 display_url: https://dannyiwakura.github.io/marketing-viral
 logo_url: https://dannyiwakura.github.io/marketing-viral/logo.png
 
-publish_mode: editorial_workflow
 slug:
   encoding: ascii
   clean_accents: true
