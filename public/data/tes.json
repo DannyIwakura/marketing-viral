@@ -690,8 +690,8 @@
       "url": "https://trafficcrusader.com/?rid=288",
       "rank": 101,
       "banner": "/banners/fe-01.webp",
-      "featured": true,
-      "listed": false
+      "featured": false,
+      "listed": true
     },
     {
       "id": "fe-02",
@@ -699,8 +699,8 @@
       "url": "https://steal-traffic.com/?rid=292",
       "rank": 102,
       "banner": "/banners/fe-02.gif",
-      "featured": true,
-      "listed": false
+      "featured": false,
+      "listed": true
     },
     {
       "id": "fe-03",
@@ -780,6 +780,24 @@
       "url": "https://traffup.net/free/?rf=417776363",
       "rank": 79,
       "banner": "/banners/H46860153859.gif",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "te-80",
+      "title": "Morehits4u",
+      "url": "https://morehits4u.com/join/danny",
+      "rank": 80,
+      "banner": "/banners/banner728x90en.jpg",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "te-81",
+      "title": "123hits",
+      "url": "https://123hits.surf/?rid=356",
+      "rank": 81,
+      "banner": "/banners/getimg.gif",
       "featured": true,
       "listed": false
     }
