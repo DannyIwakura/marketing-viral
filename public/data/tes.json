@@ -717,8 +717,8 @@
       "url": "https://mysteriousscotlandtraffic.com/?rid=10630",
       "rank": 104,
       "banner": "/banners/fe-04.gif",
-      "featured": true,
-      "listed": false
+      "featured": false,
+      "listed": true
     },
     {
       "id": "fe-05",
@@ -807,6 +807,15 @@
       "url": "https://twilighthits.com/index.php?rid=743",
       "rank": 82,
       "banner": "/banners/ban10_743.jpg",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "te-83",
+      "title": "Really Simple Surfing",
+      "url": "https://reallysimplesurfing.com/join?ref=47965F01",
+      "rank": 83,
+      "banner": "/banners/banner468x60-v3surfboard.gif",
       "featured": true,
       "listed": false
     }
