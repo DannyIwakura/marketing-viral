@@ -753,8 +753,8 @@
       "url": "https://mytrafficpartners.com/index.php?r=dannyiwakura",
       "rank": 108,
       "banner": "/banners/fe-08.png",
-      "featured": true,
-      "listed": false
+      "featured": false,
+      "listed": true
     },
     {
       "id": "te-77",
@@ -816,6 +816,15 @@
       "url": "https://reallysimplesurfing.com/join?ref=47965F01",
       "rank": 83,
       "banner": "/banners/banner468x60-v3surfboard.gif",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "te-84",
+      "title": "Viral Hits 4 U",
+      "url": "https://viralhits4u.com/?rid=1031",
+      "rank": 84,
+      "banner": "/banners/getimg-1.gif",
       "featured": true,
       "listed": false
     }
