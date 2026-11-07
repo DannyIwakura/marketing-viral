@@ -744,8 +744,8 @@
       "url": "https://trafficreations.com/?rid=142",
       "rank": 107,
       "banner": "/banners/fe-07.png",
-      "featured": true,
-      "listed": false
+      "featured": false,
+      "listed": true
     },
     {
       "id": "fe-08",
@@ -771,6 +771,15 @@
       "url": "https://sites2click.com/?r=265",
       "rank": 78,
       "banner": "/banners/banner.jpg",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "te-78",
+      "title": "Traffup",
+      "url": "https://traffup.net/free/?rf=417776363",
+      "rank": 79,
+      "banner": "/banners/H46860153859.gif",
       "featured": true,
       "listed": false
     }
