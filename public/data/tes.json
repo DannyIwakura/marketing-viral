@@ -708,8 +708,8 @@
       "url": "https://aztecatrafficpower.com/?rid=31",
       "rank": 103,
       "banner": "/banners/fe-03.png",
-      "featured": true,
-      "listed": false
+      "featured": false,
+      "listed": true
     },
     {
       "id": "fe-04",
@@ -798,6 +798,15 @@
       "url": "https://123hits.surf/?rid=356",
       "rank": 81,
       "banner": "/banners/getimg.gif",
+      "featured": true,
+      "listed": false
+    },
+    {
+      "id": "te-82",
+      "title": "Twilight Hits",
+      "url": "https://twilighthits.com/index.php?rid=743",
+      "rank": 82,
+      "banner": "/banners/ban10_743.jpg",
       "featured": true,
       "listed": false
     }
