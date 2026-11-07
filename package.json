@@ -3,12 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Marketing Viral — directorio de Traffic Exchanges con panel Decap CMS y despliegue en GitHub Pages",
+  "description": "Marketing Viral — directorio de Traffic Exchanges con panel Pages CMS y despliegue en GitHub Pages",
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/postbuild.mjs",
-    "preview": "vite preview --port 4173",
-    "cms": "npx decap-server"
+    "preview": "vite preview --port 4173"
   },
   "dependencies": {
     "@fontsource/inter": "^5.1.0",

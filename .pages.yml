@@ -5,9 +5,11 @@
 #   1) Entra en https://app.pagescms.org y accede con tu cuenta de GitHub.
 #   2) Instala la GitHub App "Pages CMS" en el repositorio
 #      DannyIwakura/marketing-viral (solo ese repo).
-#   3) Abre el repositorio en Pages CMS: veras la coleccion "Traffic Exchanges"
-#      con las 84 fichas. Edita, sube banners y guarda -> commit en main ->
-#      GitHub Pages se actualiza solo en ~1 minuto.
+#   3) Abre el repositorio en Pages CMS (o directamente
+#      https://app.pagescms.org/DannyIwakura/marketing-viral, o el atajo
+#      https://dannyiwakura.github.io/marketing-viral/admin): veras la
+#      coleccion "Traffic Exchanges" con todas las fichas. Edita, sube banners
+#      y guarda -> commit en main -> GitHub Pages se actualiza solo en ~1 minuto.
 #
 # Este archivo no afecta al sitio: solo lo lee Pages CMS.
 # ---------------------------------------------------------------------------

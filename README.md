@@ -20,8 +20,8 @@ simple `git push`.
 | `src/styles/app.css` | Layout completo (responsive) |
 | `public/data/tes.json` | **El contenido**: las fichas del directorio y las destacadas |
 | `public/banners/` | 84 banners de los exchanges (468×60) |
-| `public/admin/` | Panel Decap CMS (`/admin`) |
-| `.pages.yml` | Panel Pages CMS (online, sin OAuth) |
+| `public/admin/` | `/admin` → redirección al panel online de Pages CMS |
+| `.pages.yml` | Configuración del panel Pages CMS (online, sin OAuth) |
 | `design-reference/` | Capturas y mediciones del diseño original (referencia) |
 | `DESIGN-NOTES.md` | Especificación de diseño y estado del proyecto |
 
@@ -75,7 +75,8 @@ El repositorio ya está creado, el workflow ya ha desplegado y Pages está activ
 publica el sitio en ~1 minuto.
 
 Si algún día cambia el nombre del repo o se usa un dominio propio, actualiza `BASE_PATH` en
-`src/lib/site.js` (`'/marketing-viral/'` → `'/'`) y `site_url` en `public/admin/config.yml`.
+`src/lib/site.js` (`'/marketing-viral/'` → `'/'`) y la URL de `public/admin/index.html`
+(la redirección al panel de Pages CMS).
 
 ## Estadísticas de visitas
 
@@ -121,9 +122,9 @@ ver el porcentaje de visitas que acaba pulsando un banner.
 
 ## Editar el contenido
 
-Hay tres formas, de la más cómoda a la más técnica.
-
-### Opción A — Pages CMS (online, sin instalar nada)
+El CMS es **Pages CMS**, online y sin instalar nada. Se entra por
+**https://app.pagescms.org/DannyIwakura/marketing-viral** o, más corto, por
+**https://dannyiwakura.github.io/marketing-viral/admin**, que redirige allí.
 
 1. Entra en **https://app.pagescms.org** y accede con GitHub.
 2. Instala la GitHub App **Pages CMS** solo en el repo `DannyIwakura/marketing-viral`.
@@ -131,31 +132,8 @@ Hay tres formas, de la más cómoda a la más técnica.
    Puedes añadir una ficha nueva, subir el banner, marcar *Destacado en portada* (máx. 8)
    y guardar. El cambio se commitea y la web se actualiza sola.
 
-La configuración ya está escrita en `.pages.yml`.
-
-### Opción B — Decap CMS en local (sin OAuth)
-
-```powershell
-npm run cms        # npx decap-server (puerto 8081)
-```
-
-Abre `http://localhost:8081/admin/`, edita y guarda: Decap escribe
-`public/data/tes.json` y hace el commit. Después `git push`.
-
-### Opción C — Decap CMS online en `/admin` (requiere configuración única)
-
-El panel `/admin` del sitio publicado ya carga, pero para entrar necesita una
-**GitHub OAuth App** + un **proxy OAuth** gratuito:
-
-1. Crear una GitHub OAuth App:
-   - Homepage URL: `https://dannyiwakura.github.io/marketing-viral/`
-   - Authorization callback URL: `https://dannyiwakura.github.io/marketing-viral/admin/`
-2. Desplegar un proxy OAuth gratuito para Decap (Netlify, Vercel o Cloudflare Worker)
-   y usar su URL: https://decapcms.org/docs/github-backend/
-3. En `public/admin/config.yml`: descomentar `client_id` y `base_url`, y poner
-   `local_backend: false`.
-
-**Recomendado:** usa la Opción A y déjate de OAuth.
+La configuración está en `.pages.yml`. El antiguo panel Decap (`public/admin/config.yml`)
+se eliminó: si algún día hiciera falta, sigue disponible en el historial de git.
 
 ---
 

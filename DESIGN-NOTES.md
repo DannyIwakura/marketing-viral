@@ -7,7 +7,7 @@
 
 ## 1. Objetivo
 
-Sitio estático con CMS (Decap) desplegado en **GitHub Pages**, que replica el diseño
+Sitio estático con CMS (Pages CMS) desplegado en **GitHub Pages**, que replica el diseño
 oscuro SaaS del antiguo Wix Studio 2. El sitio viejo de Wix (`neogamesforo.wixsite.com/dannyiwakura`)
 permanece online y mostrará un **iframe** del sitio nuevo para que los Traffic Exchanges
 no se quejen de la URL.
@@ -27,10 +27,10 @@ no se quejen de la URL.
 | Tokens de marca (`theme.css`) | ✅ |
 | **CSS de layout completo (`app.css`)** | ✅ escrito con la spec de este documento |
 | Menú hamburguesa en móvil | ✅ `src/components/Header.jsx` |
-| Panel Decap (`public/admin/index.html` + `config.yml`) | ✅ (local OK; online requiere OAuth) |
 | Panel Pages CMS (`.pages.yml`) | ✅ (online sin OAuth, instalando la GitHub App) |
+| `/admin` → redirección a Pages CMS (`public/admin/index.html`) | ✅ (sin panel Decap) |
 | Workflow de GitHub Pages (`.github/workflows/deploy.yml`) | ✅ |
-| `README.md` con instrucciones de push/OAuth | ✅ |
+| `README.md` con instrucciones de publicación y del CMS | ✅ |
 | `npm install` + `npm run build` + verificación visual | ✅ build OK, 8/76/10 tarjetas renderizadas |
 | Repositorio git local con commit inicial | ✅ |
 | **Publicado en GitHub Pages** | ✅ https://dannyiwakura.github.io/marketing-viral/ |
@@ -189,19 +189,20 @@ entre `offers, services, products, referrals, blog, website` (`src/components/Ro
 
 ---
 
-## 5. CMS (Decap) — pendiente de crear
+## 5. CMS (Pages CMS) — hecho
 
-- `public/admin/index.html`: carga `https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js`.
-- `public/admin/config.yml`: backend `github`, rama `main`,
-  colección `tes` tipo `json-file` sobre `public/data/tes.json`,
-  `media_folder: public/banners`, `public_folder: /banners`.
-- Campos por ficha: `title`, `url`, `rank` (number), `banner` (image), `featured` (boolean),
-  `listed` (boolean, por defecto true).
+- Panel online: **https://app.pagescms.org/DannyIwakura/marketing-viral** (requiere la
+  GitHub App *Pages CMS* instalada solo en ese repo).
+- Configuración: `.pages.yml` (colección `Traffic Exchanges` sobre `public/data/tes.json`,
+  banners en `public/banners`).
+- Campos por ficha: `id`, `title`, `url`, `rank` (number), `banner` (image),
+  `featured` (boolean), `listed` (boolean, por defecto true).
 - Cada guardado = commit → GitHub Pages redespliega.
-- Requiere una **GitHub OAuth App** del usuario:
-  - Homepage URL: `https://dannyiwakura.github.io/marketing-viral/`
-  - Authorization callback URL: `https://dannyiwakura.github.io/marketing-viral/admin/`
-  - El `client_id` va en `config.yml` (`backend: github` + `base_url`).
+- `public/admin/index.html` ya **no es un panel**: es una página `noindex` que redirige a
+  Pages CMS (meta refresh + `location.replace`, con enlace de rescate). GitHub Pages no
+  permite redirecciones 301.
+- El antiguo panel Decap (`public/admin/config.yml`, `npm run cms`) se eliminó por no usarse;
+  sigue en el historial de git si alguna vez hiciera falta.
 
 ---
 

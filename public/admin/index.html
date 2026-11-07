@@ -6,9 +6,44 @@
         <meta name="robots" content="noindex" />
         <title>Marketing Viral — Panel de contenido</title>
         <link rel="icon" href="../logo.png" />
+
+        <!--
+            El panel de contenido vive en Pages CMS (online).
+            GitHub Pages no permite redirecciones 301, asi que esta pagina
+            redirige en el cliente. El enlace del final sirve de rescate si el
+            navegador o un bloqueador impide el salto automatico.
+        -->
+        <meta http-equiv="refresh" content="0; url=https://app.pagescms.org/DannyIwakura/marketing-viral" />
+        <script>
+            location.replace('https://app.pagescms.org/DannyIwakura/marketing-viral')
+        </script>
+        <style>
+            body {
+                display: grid;
+                min-height: 100vh;
+                margin: 0;
+                place-items: center;
+                background: #0e0e11;
+                color: #f4f4f5;
+                font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            }
+            main {
+                padding: 24px;
+                text-align: center;
+            }
+            p {
+                margin: 8px 0;
+                color: #a1a1aa;
+            }
+            a {
+                color: #c4b5fd;
+            }
+        </style>
     </head>
     <body>
-        <!-- Decap CMS: el panel de administracion del directorio. -->
-        <script src="https://unpkg.com/decap-cms@^3.8.0/dist/decap-cms.js"></script>
+        <main>
+            <p>Abriendo el panel de contenido…</p>
+            <p><a href="https://app.pagescms.org/DannyIwakura/marketing-viral">Abrir Pages CMS</a></p>
+        </main>
     </body>
 </html>
