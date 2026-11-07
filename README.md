@@ -132,6 +132,15 @@ El CMS es **Pages CMS**, online y sin instalar nada. Se entra por
    Puedes añadir una ficha nueva, subir el banner, marcar *Destacado en portada* (máx. 8)
    y guardar. El cambio se commitea y la web se actualiza sola.
 
+**Tiempo de publicación:** cada guardado lanza GitHub Actions y tarda **~30-60 segundos**
+en estar online. Cuando el deploy termina, **basta un F5 normal**: el sitio pide los datos
+con una URL única (`?v=…`) y sin caché, así que ninguna copia antigua puede colarse.
+Antes hacía falta `Ctrl+F5` porque GitHub Pages cachea los archivos 10 minutos.
+
+**Banners reemplazados:** si subes una imagen nueva **con el mismo nombre de archivo** que
+la anterior, el navegador puede seguir mostrando la vieja hasta 10 minutos. Súbela con otro
+nombre (lo más simple) o usa `Ctrl+F5`.
+
 La configuración está en `.pages.yml`. El antiguo panel Decap (`public/admin/config.yml`)
 se eliminó: si algún día hiciera falta, sigue disponible en el historial de git.
 

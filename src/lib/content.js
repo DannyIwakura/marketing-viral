@@ -8,13 +8,15 @@ export function assetUrl(path) {
     return `${BASE_PATH}${String(path).replace(/^\/+/, '')}`
 }
 
-/** Carga el contenido desde /public/data/tes.json (lo edita el panel Decap). */
+/** Carga el contenido desde /public/data/tes.json (lo edita Pages CMS). */
 export function useContent() {
     const [state, setState] = useState({ loading: true, error: null, tes: [] })
 
     useEffect(() => {
         let alive = true
-        fetch(assetUrl('data/tes.json'), { cache: 'no-cache' })
+        // URL unica por carga + no-store: GitHub Pages cachea 10 minutos y, sin
+        // esto, tras guardar en el CMS hacia falta Ctrl+F5 para ver lo nuevo.
+        fetch(`${assetUrl('data/tes.json')}?v=${Date.now()}`, { cache: 'no-store' })
             .then((r) => {
                 if (!r.ok) throw new Error(`HTTP ${r.status}`)
                 return r.json()
